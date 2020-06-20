@@ -1,0 +1,21 @@
+https://atoawsprod.signin.aws.amazon.com/console
+aws account: 931149936765
+lachlan.mckenzie@ato.gov.au	...facts...
+switch role link: https://signin.aws.amazon.com/switchrole?roleName=ato-role-tig0002-admin&account=atoinnovation5
+
+
+http://bit.ly/serverless-express
+http://bit.ly/proxy-resources-doc
+
+Got working in Lambda with MongoAtlas & DocumentDb.  Added id verification.
+
+working on cleaning up tests.
+
+to run tests:
+./offwego.sh - to get to the right folder
+tsc - to compile
+npm run test -- -t "STP (1|2|3|4|5|6)  - or run test2 or test3 have different options to deal with callbacks and shows more messages but left hanging
+
+to debug tests, start above, then F5 with Attach by Process Id (usually first process) once the "jest" is shown
+
+

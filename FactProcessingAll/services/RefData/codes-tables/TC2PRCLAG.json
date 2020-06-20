@@ -1,0 +1,311 @@
+﻿{
+    "name": "TC2PRCLAG",
+    "columns": [
+      {
+        "name": "CD_ENV_LANGUAGE",
+        "type": "CHAR"
+      },
+      {
+        "name": "CD_PROCESS_STEP",
+        "type": "DECIMAL"
+      },
+      {
+        "name": "DC_PROCESS_STEP",
+        "type": "CHAR"
+      },
+      {
+        "name": "QT_PROCESS_LAG",
+        "type": "DECIMAL"
+      }
+    ],
+    "rows": [
+      [
+        "E",
+        "5",
+        "Standard credit processing",
+        "3"
+      ],
+      [
+        "E",
+        "10",
+        "Standard debit processing",
+        "3"
+      ],
+      [
+        "E",
+        "15",
+        "Standard in-balance processing",
+        "3"
+      ],
+      [
+        "E",
+        "20",
+        "Manual IOP",
+        "5"
+      ],
+      [
+        "E",
+        "25",
+        "Centrelink debt",
+        "1"
+      ],
+      [
+        "E",
+        "30",
+        "CSA debt",
+        "1"
+      ],
+      [
+        "E",
+        "35",
+        "FTB debt",
+        "0"
+      ],
+      [
+        "E",
+        "40",
+        "Centrelink + CSA debt",
+        "2"
+      ],
+      [
+        "E",
+        "45",
+        "Centrelink + FTB debt",
+        "1"
+      ],
+      [
+        "E",
+        "50",
+        "CSA + FTB debt",
+        "1"
+      ],
+      [
+        "E",
+        "55",
+        "Centrelink + CSA + FTB debt",
+        "2"
+      ],
+      [
+        "E",
+        "60",
+        "Composite debt indicator",
+        "5"
+      ],
+      [
+        "E",
+        "65",
+        "Lag for SNI Request - CC",
+        "35"
+      ],
+      [
+        "E",
+        "70",
+        "Lag for SNI Request - SG",
+        "35"
+      ],
+      [
+        "E",
+        "75",
+        "Lag for SNI Request - SHAsa",
+        "35"
+      ],
+      [
+        "E",
+        "80",
+        "Lag for No TFN Notice",
+        "55"
+      ],
+      [
+        "E",
+        "85",
+        "Lag for SNI Request - FHSA",
+        "35"
+      ],
+      [
+        "E",
+        "90",
+        "Lodgment reminder letters lag",
+        "3"
+      ],
+      [
+        "E",
+        "95",
+        "SIC prepayment eligibility",
+        "30"
+      ],
+      [
+        "E",
+        "100",
+        "Refunder minimum",
+        "1"
+      ],
+      [
+        "E",
+        "200",
+        "Instalment Correspondence Req",
+        "14"
+      ],
+      [
+        "E",
+        "105",
+        "No Disbursement Type",
+        "3"
+      ],
+      [
+        "E",
+        "110",
+        "Issue Date",
+        "3"
+      ],
+      [
+        "E",
+        "115",
+        "Lag for RR Request - FHSA",
+        "35"
+      ],
+      [
+        "E",
+        "120",
+        "NRWT Transaction Lag",
+        "24"
+      ],
+      [
+        "E",
+        "145",
+        "Lag for AoA Request - SGEE Rmt",
+        "60"
+      ],
+      [
+        "E",
+        "150",
+        "Lag for AoR Request - SGEE Rcv",
+        "60"
+      ],
+      [
+        "E",
+        "155",
+        "Lag for USM Collections",
+        "5"
+      ],
+      [
+        "E",
+        "125",
+        "Lag for SG Part 7 Objection dt",
+        "60"
+      ],
+      [
+        "E",
+        "130",
+        "Lag for RBS Ind Request - USM",
+        "3"
+      ],
+      [
+        "E",
+        "135",
+        "Lag for SNF Request - Sec20C",
+        "3"
+      ],
+      [
+        "E",
+        "140",
+        "Standard role processing",
+        "3"
+      ],
+      [
+        "E",
+        "165",
+        "SG Commute Lag",
+        "3"
+      ],
+      [
+        "E",
+        "160",
+        "Lag for RBS Fund Request - USM",
+        "3"
+      ],
+      [
+        "E",
+        "170",
+        "Lag for SNF Request - IAC",
+        "3"
+      ],
+      [
+        "E",
+        "175",
+        "Lag for SNI Request - LISC",
+        "35"
+      ],
+      [
+        "E",
+        "185",
+        "Lag for SNI Request - USM",
+        "3"
+      ],
+      [
+        "E",
+        "180",
+        "Lag for SNI Request - HECT",
+        "4"
+      ],
+      [
+        "E",
+        "205",
+        "Payment Plan Recalc Quarantine",
+        "3"
+      ],
+      [
+        "E",
+        "190",
+        "Lag for USM CI",
+        "3"
+      ],
+      [
+        "E",
+        "210",
+        "PAYGI Corro Req Hard Test",
+        "3"
+      ],
+      [
+        "E",
+        "215",
+        "PAYGI Corro Req Monthly Cycle",
+        "3"
+      ],
+      [
+        "E",
+        "230",
+        "DRI Delay",
+        "14"
+      ],
+      [
+        "E",
+        "220",
+        "Future Issue Date Limit",
+        "20"
+      ],
+      [
+        "E",
+        "235",
+        "Individual Recovery Lag",
+        "35"
+      ],
+      [
+        "E",
+        "240",
+        "ENCC Election Due Date",
+        "60"
+      ],
+      [
+        "E",
+        "245",
+        "PAYGI Corro Req AS Due Delay",
+        "20"
+      ],
+      [
+        "E",
+        "250",
+        "PDB Forecast Lag",
+        "3"
+      ]
+    ]
+}

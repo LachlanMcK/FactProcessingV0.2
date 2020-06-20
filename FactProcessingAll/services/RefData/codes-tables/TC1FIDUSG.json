@@ -1,0 +1,1 @@
+﻿{"name":"TC1FIDUSG","columns":[{"name":"CD_ENV_LANGUAGE","type":"CHAR"},{"name":"CD_TYPE_FID","type":"DECIMAL"},{"name":"IN_ROLE_RULE","type":"CHAR"},{"name":"DC_TYPE_FID","type":"CHAR"}],"rows":[["E","5","Y","DIRECT DEBIT"],["E","10","Y","DIRECT REFUND"]]}

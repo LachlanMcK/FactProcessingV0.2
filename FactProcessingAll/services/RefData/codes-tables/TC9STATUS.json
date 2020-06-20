@@ -1,0 +1,2783 @@
+﻿{
+    "name": "TC9STATUS",
+    "columns": [
+      {
+        "name": "CD_ENV_LANGUAGE",
+        "type": "CHAR"
+      },
+      {
+        "name": "NM_TYPE_STATUS",
+        "type": "CHAR"
+      },
+      {
+        "name": "CD_STATUS",
+        "type": "DECIMAL"
+      },
+      {
+        "name": "DC_STATUS",
+        "type": "CHAR"
+      }
+    ],
+    "rows": [
+      [
+        "E",
+        "ACTVTY",
+        "1",
+        "Active"
+      ],
+      [
+        "E",
+        "ACTVTY",
+        "2",
+        "Active - Transferred"
+      ],
+      [
+        "E",
+        "ACTVTY",
+        "6",
+        "Inactive - Reversal"
+      ],
+      [
+        "E",
+        "AGGR-IN",
+        "1",
+        "Approved"
+      ],
+      [
+        "E",
+        "AGGR-IN",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "AGGR-OUT",
+        "1",
+        "Approved"
+      ],
+      [
+        "E",
+        "AGGR-OUT",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "AGGR-OUT",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "AGGR-REQ",
+        "5",
+        "Held"
+      ],
+      [
+        "E",
+        "AGGR-REQ",
+        "10",
+        "Pending"
+      ],
+      [
+        "E",
+        "AGGR-REQ",
+        "15",
+        "Approved"
+      ],
+      [
+        "E",
+        "AGGR-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "AGGR-REQ",
+        "25",
+        "Awaiting Information"
+      ],
+      [
+        "E",
+        "AGGR-REQ",
+        "30",
+        "Processed"
+      ],
+      [
+        "E",
+        "ARNGMT",
+        "20",
+        "Arr-Active"
+      ],
+      [
+        "E",
+        "ARNGMT",
+        "30",
+        "Arr-Complete"
+      ],
+      [
+        "E",
+        "ARNGMT",
+        "40",
+        "Arr-Default"
+      ],
+      [
+        "E",
+        "ARNGMT",
+        "50",
+        "Arr-Pending"
+      ],
+      [
+        "E",
+        "ARNGMT",
+        "60",
+        "Arr-Cancelled"
+      ],
+      [
+        "E",
+        "ARNGMT",
+        "65",
+        "Arr-Requires Approval"
+      ],
+      [
+        "E",
+        "ARNGMT",
+        "70",
+        "blank/nil"
+      ],
+      [
+        "E",
+        "BALANC",
+        "5",
+        " In Balance"
+      ],
+      [
+        "E",
+        "BALANC",
+        "10",
+        "Under Paid"
+      ],
+      [
+        "E",
+        "BALANC",
+        "15",
+        "Over Paid"
+      ],
+      [
+        "E",
+        "BILLS",
+        "405",
+        "Approved"
+      ],
+      [
+        "E",
+        "BILLS",
+        "410",
+        "Processed"
+      ],
+      [
+        "E",
+        "BILLS",
+        "415",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "BILLS",
+        "420",
+        "Pending"
+      ],
+      [
+        "E",
+        "CASEPD",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "CASEPD",
+        "10",
+        "Moved"
+      ],
+      [
+        "E",
+        "CASEPD",
+        "15",
+        "Removed"
+      ],
+      [
+        "E",
+        "CCTR_MATCH",
+        "5",
+        "AUM"
+      ],
+      [
+        "E",
+        "CCTR_MATCH",
+        "10",
+        "MCR"
+      ],
+      [
+        "E",
+        "CCTR_MATCH",
+        "15",
+        "MAN"
+      ],
+      [
+        "E",
+        "CCTR_WST",
+        "5",
+        "MET"
+      ],
+      [
+        "E",
+        "CCTR_WST",
+        "10",
+        "NOT"
+      ],
+      [
+        "E",
+        "CCTR_WST",
+        "15",
+        "OUT"
+      ],
+      [
+        "E",
+        "CCTR_WST",
+        "20",
+        "PND"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "5",
+        "Pending Issue"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "10",
+        "Issued"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "15",
+        "Stop Requested"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "20",
+        "Stop Request Sent"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "25",
+        "Presented"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "30",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "35",
+        "Stale"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "40",
+        "Processed"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "45",
+        "Conversion Unknown"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "50",
+        "Conversion - Legacy Credit Tfr"
+      ],
+      [
+        "E",
+        "CNTCT",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "CNTCT",
+        "10",
+        "Inactive"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "105",
+        "CBR - Approved"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "110",
+        "CBR - Cancelled"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "115",
+        "Pending IOP Calculation"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "120",
+        "Pending External Offset"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "125",
+        "EO Info Received"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "130",
+        "EO Info Timeout"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "135",
+        "Pending DRI Calculation"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "140",
+        "DRI Approved"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "145",
+        "Reduced to Zero (Disallowed)"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "155",
+        "Denied"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "160",
+        "Pending"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "165",
+        "Processed"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "170",
+        "Processed CCF"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "175",
+        "Refunder Complete"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "180",
+        "IOP Approved"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "185",
+        "Pending Manual Review"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "190",
+        "Refunder Pending"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "195",
+        "Issue Date Adjustment Complete"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "200",
+        "Risk Suspend"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "205",
+        "Risk Approved"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "210",
+        "Pending Voucher Batching"
+      ],
+      [
+        "E",
+        "CHEQUE",
+        "55",
+        "Stop Confirmed"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "215",
+        "Pending Issue Date Adjustment"
+      ],
+      [
+        "E",
+        "D",
+        "5",
+        "Approval"
+      ],
+      [
+        "E",
+        "D",
+        "10",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "DB BAL REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "DB BAL REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "DB BAL REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "DB BAL REQ",
+        "25",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "DIR DEBIT",
+        "10",
+        "DirDeb-Scheduled"
+      ],
+      [
+        "E",
+        "DIR DEBIT",
+        "20",
+        "DirDeb-Processed"
+      ],
+      [
+        "E",
+        "DIR DEBIT",
+        "30",
+        "DirDeb-Cancelled"
+      ],
+      [
+        "E",
+        "DIR DEBIT",
+        "40",
+        "DirDeb-Not Applicable"
+      ],
+      [
+        "E",
+        "DIR DEBIT",
+        "50",
+        "DirDeb-Pending"
+      ],
+      [
+        "E",
+        "DIR DEBIT",
+        "60",
+        "DirDeb-Failed"
+      ],
+      [
+        "E",
+        "DIR DEBIT",
+        "70",
+        "blank/nil"
+      ],
+      [
+        "E",
+        "DIST-REQ",
+        "5",
+        "Held"
+      ],
+      [
+        "E",
+        "DIST-REQ",
+        "10",
+        "Pending"
+      ],
+      [
+        "E",
+        "DIST-REQ",
+        "15",
+        "Approved"
+      ],
+      [
+        "E",
+        "DIST-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "DIST-REQ",
+        "25",
+        "Processed"
+      ],
+      [
+        "E",
+        "DP",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "DP",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "DP",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "DP",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "DSCRPN",
+        "5",
+        "Open"
+      ],
+      [
+        "E",
+        "DSCRPN",
+        "10",
+        "Resolved"
+      ],
+      [
+        "E",
+        "DSCRPN",
+        "15",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "EFT",
+        "5",
+        "Pending Issue"
+      ],
+      [
+        "E",
+        "EFT",
+        "10",
+        "Recall Requested"
+      ],
+      [
+        "E",
+        "EFT",
+        "15",
+        "Recall Request Sent"
+      ],
+      [
+        "E",
+        "EFT",
+        "20",
+        "Issued"
+      ],
+      [
+        "E",
+        "EFT",
+        "25",
+        "Rejected"
+      ],
+      [
+        "E",
+        "EFT",
+        "30",
+        "Returned"
+      ],
+      [
+        "E",
+        "EFT",
+        "35",
+        "Processed"
+      ],
+      [
+        "E",
+        "EFT",
+        "40",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "EFT",
+        "45",
+        "Recall Confirmed"
+      ],
+      [
+        "E",
+        "ESLRPTSTS",
+        "5",
+        "Received"
+      ],
+      [
+        "E",
+        "ESLRPTSTS",
+        "10",
+        "Processed"
+      ],
+      [
+        "E",
+        "ESLRPTSTS",
+        "15",
+        "Error"
+      ],
+      [
+        "E",
+        "FID",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "FID",
+        "10",
+        "Inactive"
+      ],
+      [
+        "E",
+        "FORMST",
+        "110",
+        "Processed"
+      ],
+      [
+        "E",
+        "FORMST",
+        "111",
+        "Suspended"
+      ],
+      [
+        "E",
+        "FORMST",
+        "112",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "GIC CONC",
+        "10",
+        "Active"
+      ],
+      [
+        "E",
+        "GIC CONC",
+        "40",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "Inf-Notice",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "Inf-Notice",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "Inf-Notice",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "Inf-Notice",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "ID",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "ID",
+        "10",
+        "Inactive"
+      ],
+      [
+        "E",
+        "INSTALMENT",
+        "10",
+        "Inst-Scheduled"
+      ],
+      [
+        "E",
+        "INSTALMENT",
+        "20",
+        "Inst-Paid"
+      ],
+      [
+        "E",
+        "INSTALMENT",
+        "30",
+        "Inst-Pending"
+      ],
+      [
+        "E",
+        "INSTALMENT",
+        "40",
+        "Inst-Defaulted"
+      ],
+      [
+        "E",
+        "INSTALMENT",
+        "50",
+        "Inst-Cancelled"
+      ],
+      [
+        "E",
+        "INSTALMENT",
+        "70",
+        "blank/nil"
+      ],
+      [
+        "E",
+        "LINK",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "LINK",
+        "10",
+        "Inactive"
+      ],
+      [
+        "E",
+        "LODGMT",
+        "0",
+        "Not Applicable"
+      ],
+      [
+        "E",
+        "LODGMT",
+        "5",
+        "Return not Necessary"
+      ],
+      [
+        "E",
+        "LODGMT",
+        "15",
+        "Received"
+      ],
+      [
+        "E",
+        "LODGMT",
+        "20",
+        "Not Received"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "5",
+        "Pending Issue"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "10",
+        "Issued"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "15",
+        "Stop Requested"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "20",
+        "Stop Request Sent"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "25",
+        "Presented"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "30",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "35",
+        "Stale"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "40",
+        "Processed"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "45",
+        "Conversion Unknown"
+      ],
+      [
+        "E",
+        "MANUAL EFT",
+        "5",
+        "Pending Issue"
+      ],
+      [
+        "E",
+        "MANUAL EFT",
+        "10",
+        "Recall Requested"
+      ],
+      [
+        "E",
+        "MANUAL EFT",
+        "15",
+        "Recall Request Sent"
+      ],
+      [
+        "E",
+        "MANUAL EFT",
+        "20",
+        "Issued"
+      ],
+      [
+        "E",
+        "MANUAL EFT",
+        "25",
+        "Rejected"
+      ],
+      [
+        "E",
+        "MANUAL EFT",
+        "30",
+        "Returned"
+      ],
+      [
+        "E",
+        "MANUAL EFT",
+        "35",
+        "Processed"
+      ],
+      [
+        "E",
+        "MANUAL EFT",
+        "40",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "MANUAL EFT",
+        "45",
+        "Recall Confirmed"
+      ],
+      [
+        "E",
+        "NAME",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "NAME",
+        "10",
+        "Inactive"
+      ],
+      [
+        "E",
+        "NOA REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "NOA REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "NOA REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "NOA REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "NONICP EFT",
+        "10",
+        "Recall Requested"
+      ],
+      [
+        "E",
+        "NONICP EFT",
+        "15",
+        "Recall Request Sent"
+      ],
+      [
+        "E",
+        "NONICP EFT",
+        "20",
+        "Issued"
+      ],
+      [
+        "E",
+        "NONICP EFT",
+        "25",
+        "Rejected"
+      ],
+      [
+        "E",
+        "NONICP EFT",
+        "30",
+        "Returned"
+      ],
+      [
+        "E",
+        "NONICP EFT",
+        "35",
+        "Processed"
+      ],
+      [
+        "E",
+        "NONICP EFT",
+        "40",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "NONICP EFT",
+        "45",
+        "Recall Confirmed"
+      ],
+      [
+        "E",
+        "NOTICE-REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "NOTICE-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "NOTICE-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "NTFN-NOTIC",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "NTFN-NOTIC",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "NTFN-NOTIC",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "OFFSET",
+        "210",
+        "Identified"
+      ],
+      [
+        "E",
+        "OFFSET",
+        "220",
+        "Pending Request"
+      ],
+      [
+        "E",
+        "OFFSET",
+        "230",
+        "Requested"
+      ],
+      [
+        "E",
+        "OFFSET",
+        "240",
+        "Received"
+      ],
+      [
+        "E",
+        "OFFSET",
+        "250",
+        "Inactive"
+      ],
+      [
+        "E",
+        "OOL-REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "OOL-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "OOL-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "OOL-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "PAYLOAD",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "PAYLOAD",
+        "10",
+        "Actioned"
+      ],
+      [
+        "E",
+        "PAYLOAD",
+        "15",
+        "Delete"
+      ],
+      [
+        "E",
+        "PAYLOAD",
+        "20",
+        "Exception"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "5",
+        "Suspended - Role Unknown"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "10",
+        "Suspended - Role Known"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "15",
+        "Aged Suspended  - Role Known"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "20",
+        "Aged Suspended - Role Unknown"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "25",
+        "Conscience Money"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "30",
+        "Untraceable"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "35",
+        "Payment Form manually actnd"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "40",
+        "Transferred to Suspense"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "60",
+        "New"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "70",
+        "Re-processed"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "75",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "100",
+        "External Transfer to CAC"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "105",
+        "External transfer to CPFP"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "110",
+        "External transfer to CCSD"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "115",
+        "External transfer to CCSR"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "120",
+        "External transfer to CSA"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "125",
+        "External transfer to MISC"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "130",
+        "External transfer to PAYE"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "135",
+        "External transfer to PPS"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "140",
+        "External transfer to RPS"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "145",
+        "External transfer to SCSP"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "150",
+        "External transfer to SGCF"
+      ],
+      [
+        "E",
+        "MANUAL CHQ",
+        "55",
+        "Stop Confirmed"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "155",
+        "External transfer to SGER"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "160",
+        "External transfer to SGSD"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "165",
+        "External transfer to SGSR"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "170",
+        "External transfer to SHAR"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "175",
+        "External transfer to SMFR"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "180",
+        "External transfer to STAX"
+      ],
+      [
+        "E",
+        "PAYMT",
+        "185",
+        "Duplicate Paymt Form actioned"
+      ],
+      [
+        "E",
+        "PD",
+        "5",
+        "ACTIVE"
+      ],
+      [
+        "E",
+        "PD",
+        "10",
+        "INACTIVE"
+      ],
+      [
+        "E",
+        "PD",
+        "15",
+        "UNASSESSED"
+      ],
+      [
+        "E",
+        "PNR",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "PNR",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "PNR",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "PNR",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "PVA-FORM",
+        "5",
+        "Processed"
+      ],
+      [
+        "E",
+        "PVA-FORM",
+        "10",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "PVA-FORM",
+        "15",
+        "Suspended"
+      ],
+      [
+        "E",
+        "RCONCL",
+        "5",
+        "Unactioned"
+      ],
+      [
+        "E",
+        "RCONCL",
+        "10",
+        "Work in Progress"
+      ],
+      [
+        "E",
+        "RCONCL",
+        "15",
+        "Submitted for approval"
+      ],
+      [
+        "E",
+        "RCONCL",
+        "20",
+        "Approved"
+      ],
+      [
+        "E",
+        "REFUND",
+        "305",
+        "Refund - Approved"
+      ],
+      [
+        "E",
+        "REFUND",
+        "415",
+        "Refund - Cancelled"
+      ],
+      [
+        "E",
+        "REVIEW ITM",
+        "5",
+        "Pending Approval"
+      ],
+      [
+        "E",
+        "REVIEW ITM",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "REVIEW ITM",
+        "15",
+        "Closed"
+      ],
+      [
+        "E",
+        "RFND VCHR",
+        "5",
+        "Approved"
+      ],
+      [
+        "E",
+        "RFND VCHR",
+        "10",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "RFND VCHR",
+        "15",
+        "Pending"
+      ],
+      [
+        "E",
+        "RFND VCHR",
+        "20",
+        "Held"
+      ],
+      [
+        "E",
+        "RFND VCHR",
+        "25",
+        "Processed"
+      ],
+      [
+        "E",
+        "RLBLTY",
+        "5",
+        "Reliable"
+      ],
+      [
+        "E",
+        "RLBLTY",
+        "10",
+        "Unreliable"
+      ],
+      [
+        "E",
+        "ROLE",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "ROLE",
+        "10",
+        "Inactive"
+      ],
+      [
+        "E",
+        "RR",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "RR",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "RR",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "RR",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "RUC",
+        "5",
+        "Reliable"
+      ],
+      [
+        "E",
+        "RUC",
+        "10",
+        "Unreliable"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "5",
+        "HMN"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "10",
+        "HTY"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "15",
+        "HFA"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "20",
+        "HFB"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "25",
+        "HFC"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "30",
+        "HIA"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "35",
+        "HTD"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "40",
+        "HTS"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "45",
+        "STY"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "50",
+        "SMN"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "55",
+        "HAD"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "60",
+        "HDB"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "65",
+        "HDC"
+      ],
+      [
+        "E",
+        "SCSFL",
+        "70",
+        "HMY"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "5",
+        "New"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "10",
+        "Read"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "15",
+        "Replied"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "20",
+        "Failed"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "25",
+        "Sent"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "30",
+        "ATO Initiated"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "35",
+        "Waiting Transfer"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "40",
+        "Transfer Initiated"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "45",
+        "Waiting Response"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "50",
+        "Completed"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "55",
+        "Response Error"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "60",
+        "Scan Waiting"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "65",
+        "Waiting Scan Result"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "70",
+        "Scan failed - virus"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "75",
+        "Scan failed - expired"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "80",
+        "Scan failed - unknown File"
+      ],
+      [
+        "E",
+        "REFUND",
+        "10",
+        "Refund - Recredit"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "85",
+        "Scan cleared"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "90",
+        "Scan failed - file corrupt"
+      ],
+      [
+        "E",
+        "SECURE MSG",
+        "95",
+        "Scan failed - file type error"
+      ],
+      [
+        "E",
+        "SNI",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "SNI",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "SNI",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "SNI",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "SOA REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "SOA REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "SOA REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "SOA REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "SRT",
+        "5",
+        "Pending Approval"
+      ],
+      [
+        "E",
+        "SRT",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "SRT",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "SRT",
+        "20",
+        "Synchronisation Complete"
+      ],
+      [
+        "E",
+        "SRT",
+        "25",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "SUPRSS",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "SUPRSS",
+        "10",
+        "Inactive"
+      ],
+      [
+        "E",
+        "SUSPNS",
+        "120",
+        "Suspended"
+      ],
+      [
+        "E",
+        "SUSPNS",
+        "121",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "SUSPNS",
+        "122",
+        "Suspended By Transfer"
+      ],
+      [
+        "E",
+        "SUSPNS",
+        "123",
+        "Held Suspended"
+      ],
+      [
+        "E",
+        "SUSPNS",
+        "124",
+        "Ready to Recycle"
+      ],
+      [
+        "E",
+        "SUSPNS",
+        "125",
+        "Recycled"
+      ],
+      [
+        "E",
+        "TRANS",
+        "1",
+        "Approved"
+      ],
+      [
+        "E",
+        "TRANS",
+        "15",
+        "Fully Reversed"
+      ],
+      [
+        "E",
+        "TRANS",
+        "16",
+        "Partially Reversed"
+      ],
+      [
+        "E",
+        "TRANS",
+        "105",
+        "CBR - Approved"
+      ],
+      [
+        "E",
+        "TRANS",
+        "110",
+        "CBR - Cancelled"
+      ],
+      [
+        "E",
+        "TRANS",
+        "113",
+        "Suspended By Transfer"
+      ],
+      [
+        "E",
+        "TRANS",
+        "115",
+        "Pending IOP Calculation"
+      ],
+      [
+        "E",
+        "TRANS",
+        "120",
+        "Pending External Offset"
+      ],
+      [
+        "E",
+        "TRANS",
+        "125",
+        "EO Info Received"
+      ],
+      [
+        "E",
+        "TRANS",
+        "130",
+        "EO Info Timeout"
+      ],
+      [
+        "E",
+        "TRANS",
+        "135",
+        "Pending DRI Calculation"
+      ],
+      [
+        "E",
+        "TRANS",
+        "140",
+        "DRI Approved"
+      ],
+      [
+        "E",
+        "TRANS",
+        "145",
+        "Reduced to Zero (Disallowed)"
+      ],
+      [
+        "E",
+        "TRANS",
+        "155",
+        "Denied"
+      ],
+      [
+        "E",
+        "TRANS",
+        "160",
+        "Pending"
+      ],
+      [
+        "E",
+        "TRANS",
+        "165",
+        "Processed"
+      ],
+      [
+        "E",
+        "TRANS",
+        "170",
+        "Processed CCF"
+      ],
+      [
+        "E",
+        "TRANS",
+        "175",
+        "Refunder Complete"
+      ],
+      [
+        "E",
+        "TRANS",
+        "180",
+        "IOP Approved"
+      ],
+      [
+        "E",
+        "TRANS",
+        "185",
+        "Pending Manual Review"
+      ],
+      [
+        "E",
+        "TRANS",
+        "210",
+        "Identified"
+      ],
+      [
+        "E",
+        "TRANS",
+        "220",
+        "Pending Request"
+      ],
+      [
+        "E",
+        "TRANS",
+        "230",
+        "Requested"
+      ],
+      [
+        "E",
+        "TRANS",
+        "240",
+        "Received"
+      ],
+      [
+        "E",
+        "TRANS",
+        "305",
+        "Refund - Approved"
+      ],
+      [
+        "E",
+        "SIC",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "TRANS",
+        "405",
+        "Approved"
+      ],
+      [
+        "E",
+        "TRANS",
+        "410",
+        "Processed"
+      ],
+      [
+        "E",
+        "TRANS",
+        "415",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "TRANS",
+        "420",
+        "Pending"
+      ],
+      [
+        "E",
+        "TRANSF",
+        "113",
+        "Suspended By Transfer"
+      ],
+      [
+        "E",
+        "TRDB",
+        "605",
+        "Pending"
+      ],
+      [
+        "E",
+        "TRDB",
+        "610",
+        "Processed"
+      ],
+      [
+        "E",
+        "TRDB",
+        "620",
+        "NOA Pending"
+      ],
+      [
+        "E",
+        "TRDB",
+        "625",
+        "Failed - Batch"
+      ],
+      [
+        "E",
+        "TRDB",
+        "630",
+        "Failed - Common Function"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "5",
+        "HTG"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "10",
+        "7/8"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "15",
+        "HFD"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "20",
+        "HPD"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "25",
+        "HIB"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "30",
+        "HIC"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "35",
+        "HID"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "40",
+        "HMM"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "45",
+        "MFA"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "50",
+        "MFB"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "55",
+        "MFC"
+      ],
+      [
+        "E",
+        "SIC",
+        "10",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "TRDB",
+        "615",
+        "Sent To TRDB"
+      ],
+      [
+        "E",
+        "TRDB",
+        "635",
+        "Failed - TRDB"
+      ],
+      [
+        "E",
+        "TRDB",
+        "640",
+        "Unable to replay"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "60",
+        "MFD"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "65",
+        "MPD"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "70",
+        "MIH"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "75",
+        "MIS"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "80",
+        "MHC"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "85",
+        "MIA"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "90",
+        "HII"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "95",
+        "HMI"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "100",
+        "SMI"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "105",
+        "HPC"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "110",
+        "SPC"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "115",
+        "NTM"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "120",
+        "NFA"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "125",
+        "NAU"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "130",
+        "MIB"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "135",
+        "MIC"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "140",
+        "MID"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "145",
+        "MII"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "150",
+        "MDA"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "155",
+        "MDB"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "160",
+        "MDC"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "165",
+        "MYH"
+      ],
+      [
+        "E",
+        "UNSCSFL",
+        "170",
+        "MSC"
+      ],
+      [
+        "E",
+        "IN-COR-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "IN-COR-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "IN-COR-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "OFFSET",
+        "245",
+        "Washup"
+      ],
+      [
+        "E",
+        "RECC-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "RECC-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "RECC-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "RA REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "RA REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "RA REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "DB BAL REQ",
+        "115",
+        "Pending IOP Calculation"
+      ],
+      [
+        "E",
+        "DB BAL REQ",
+        "180",
+        "IOP Approved"
+      ],
+      [
+        "E",
+        "CORRO-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "CORRO-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "CORRO-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "CORRO-REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "DIST-IN",
+        "1",
+        "Approved"
+      ],
+      [
+        "E",
+        "DIST-OUT",
+        "1",
+        "Approved"
+      ],
+      [
+        "E",
+        "DIST-REQ",
+        "30",
+        "In Progress"
+      ],
+      [
+        "E",
+        "DIST-SWEEP",
+        "5",
+        "Starting Amounts Complete"
+      ],
+      [
+        "E",
+        "DIST-SWEEP",
+        "10",
+        "Entitlements Complete"
+      ],
+      [
+        "E",
+        "DIST-SWEEP",
+        "15",
+        "Proportion Entitlement Complet"
+      ],
+      [
+        "E",
+        "DIST-SWEEP",
+        "20",
+        "Processing Complete"
+      ],
+      [
+        "E",
+        "NOTICE-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "ENT-REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "ENT-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "ENT-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "ENT-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "DIST-LEDGR",
+        "5",
+        "Work in Progress"
+      ],
+      [
+        "E",
+        "DIST-LEDGR",
+        "10",
+        "Ready for Distribution"
+      ],
+      [
+        "E",
+        "DIST-LEDGR",
+        "20",
+        "Distribution Complete"
+      ],
+      [
+        "E",
+        "AOA-REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "AOA-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "AOA-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "AOA-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "AOR-REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "AOR-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "AOR-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "AOR-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "DPA-REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "DPA-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "DPA-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "DPA-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "RBS IND RQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "RBS IND RQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "RBS IND RQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "RBS IND RQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "SNF-REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "SNF-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "SNF-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "SNF-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "GNC-REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "GNC-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "GNC-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "GNC-REQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "RBS FND RQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "RBS FND RQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "RBS FND RQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "RBS FND RQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "AMD PSC RQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "AMD PSC RQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "AMD PSC RQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "AMD PSC RQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "CLN FLD RQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "CLN FLD RQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "CLN FLD RQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "CLN FLD RQ",
+        "20",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "220",
+        "Pending WHT Calc"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "225",
+        "WHT Approved"
+      ],
+      [
+        "E",
+        "RA REQ",
+        "5",
+        "Pending"
+      ],
+      [
+        "E",
+        "FORMST",
+        "113",
+        "Draft"
+      ],
+      [
+        "E",
+        "ECC Charge",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "ECC Charge",
+        "10",
+        "Cancelled"
+      ],
+      [
+        "E",
+        "CHNLPREF",
+        "5",
+        "Active"
+      ],
+      [
+        "E",
+        "CHNLPREF",
+        "10",
+        "Inactive"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "230",
+        "Pending LPI Calculation"
+      ],
+      [
+        "E",
+        "CR BAL REQ",
+        "235",
+        "LPI Approved"
+      ],
+      [
+        "E",
+        "ARNGMT",
+        "75",
+        "Arr-All"
+      ],
+      [
+        "E",
+        "REALCN-REQ",
+        "10",
+        "Approved"
+      ],
+      [
+        "E",
+        "REALCN-REQ",
+        "15",
+        "Processed"
+      ],
+      [
+        "E",
+        "REALCN-REQ",
+        "20",
+        "Cancelled"
+      ]
+    ]
+}

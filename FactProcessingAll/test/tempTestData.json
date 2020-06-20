@@ -1,0 +1,977 @@
+[
+    {
+        "_id": "5c3eac1535f35809adb77a13",
+        "AccountSequenceNumber": 1,
+        "ClientInternalId": 12345,
+        "FormType": "myFT6",
+        "RoleTypeCode": 5,
+        "TransactionId": 1111111111,
+        "__v": 0,
+        "PeriodStartDt": "2019-01-01T00:00:00.000Z",
+        "DT_Update": "1/14/2020",
+        "TM_Update": "4:05:26 AM",
+        "updatedAt": "2020-01-14T04:05:26.469Z",
+        "createdAt": "2020-01-14T04:05:26.469Z",
+        "Sections": [
+            {
+                "SectionName": "Fred",
+                "SectionId": "1",
+                "_id": "5c4d56d18dac6630c8634d2c",
+                "LineItems": [
+                    {
+                        "Value": "1111's",
+                        "FieldIndex": 0,
+                        "FieldId": "1",
+                        "_id": "5c4d56d18dac6630c8634d2e"
+                    },
+                    {
+                        "Value": "222's",
+                        "FieldIndex": 0,
+                        "FieldId": "2",
+                        "_id": "5c4d56d18dac6630c8634d2d"
+                    }
+                ]
+            },
+            {
+                "SectionName": "Mary",
+                "SectionId": "2",
+                "_id": "5c4d56d18dac6630c8634d29",
+                "LineItems": [
+                    {
+                        "Value": "more 1111's",
+                        "FieldIndex": 0,
+                        "FieldId": "1",
+                        "_id": "5c4d56d18dac6630c8634d2b"
+                    },
+                    {
+                        "Value": "333's",
+                        "FieldIndex": 0,
+                        "FieldId": "3",
+                        "_id": "5c4d56d18dac6630c8634d2a"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "5c40574c35f35809ad028c8b",
+        "AccountSequenceNumber": 1,
+        "ClientInternalId": 12345,
+        "FormType": "myFT6",
+        "RoleTypeCode": 5,
+        "TransactionId": 2222222222222,
+        "PeriodStartDt": "2019-01-01T00:00:00.000Z",
+        "__v": 0,
+        "Sections": []
+    },
+    {
+        "_id": "5c410abc35f35809ad24ba1b",
+        "AccountSequenceNumber": 1,
+        "ClientInternalId": 12345,
+        "FormType": "myFT6",
+        "RoleTypeCode": 5,
+        "TransactionId": 33333,
+        "PeriodStartDt": "2019-01-01T00:00:00.000Z",
+        "__v": 0,
+        "DT_Update": "1/19/2019",
+        "TM_Update": "12:10:56 AM",
+        "updatedAt": "2019-01-19T00:10:56.359Z",
+        "Sections": [
+            {
+                "_id": "5c426b101889f11a971550a4",
+                "LineItems": [
+                    {
+                        "Value": "1111's",
+                        "FieldIndex": 0,
+                        "FieldId": "1",
+                        "_id": "5c426b101889f11a971550a5"
+                    }
+                ]
+            },
+            {
+                "_id": "5c426b101889f11a971550a2",
+                "LineItems": [
+                    {
+                        "Value": "2222's",
+                        "FieldIndex": 0,
+                        "FieldId": "2",
+                        "_id": "5c426b101889f11a971550a3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "5c4146ef35f35809ad345048",
+        "AccountSequenceNumber": 1,
+        "ClientInternalId": 12345,
+        "FormType": "myFT6",
+        "RoleTypeCode": 5,
+        "TransactionId": 4444444444,
+        "DT_Update": "1/18/2019",
+        "TM_Update": "7:11:29 AM",
+        "__v": 0,
+        "createdAt": "2019-01-18T03:43:14.298Z",
+        "updatedAt": "2019-01-18T07:11:29.039Z",
+        "Sections": [
+            {
+                "_id": "5c417c212719484befbdc716",
+                "LineItems": [
+                    {
+                        "Value": "1111's",
+                        "FieldIndex": 0,
+                        "FieldId": "1",
+                        "_id": "5c417c212719484befbdc717"
+                    }
+                ]
+            },
+            {
+                "_id": "5c417c212719484befbdc714",
+                "LineItems": [
+                    {
+                        "Value": "2222's",
+                        "FieldIndex": 0,
+                        "FieldId": "2",
+                        "_id": "5c417c212719484befbdc715"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "5c41b55135f35809ad4ea889",
+        "ClientInternalId": 12345,
+        "FormType": "myFT6",
+        "TransactionId": 5,
+        "AccountSequenceNumber": 1,
+        "DT_Update": "1/12/2020",
+        "TM_Update": "1:18:47 PM",
+        "__v": 0,
+        "updatedAt": "2020-01-12T02:18:47.752Z",
+        "createdAt": "2020-01-12T02:18:47.752Z",
+        "Sections": [
+            {
+                "SectionName": "Fred",
+                "SectionId": "1",
+                "_id": "5e1a82079cf7232c940b6f66",
+                "LineItems": [
+                    {
+                        "Value": "1111's",
+                        "FieldIndex": 0,
+                        "FieldId": "1",
+                        "_id": "5e1a82079cf7232c940b6f68"
+                    },
+                    {
+                        "Value": "222's",
+                        "FieldIndex": 0,
+                        "FieldId": "2",
+                        "_id": "5e1a82079cf7232c940b6f67"
+                    }
+                ]
+            },
+            {
+                "SectionName": "Mary",
+                "SectionId": "2",
+                "_id": "5e1a82079cf7232c940b6f63",
+                "LineItems": [
+                    {
+                        "Value": "more 1111's",
+                        "FieldIndex": 0,
+                        "FieldId": "1",
+                        "_id": "5e1a82079cf7232c940b6f65"
+                    },
+                    {
+                        "Value": "333's",
+                        "FieldIndex": 0,
+                        "FieldId": "3",
+                        "_id": "5e1a82079cf7232c940b6f64"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "5c50320435f35809ad38a94e",
+        "AccountSequenceNumber": 1,
+        "ClientInternalId": 12345,
+        "FormType": "10131",
+        "RoleTypeCode": 5,
+        "TransactionId": 111222333,
+        "DT_Update": "1/12/2020",
+        "TM_Update": "1:17:15 PM",
+        "__v": 0,
+        "createdAt": "2020-01-12T02:17:15.961Z",
+        "updatedAt": "2020-01-12T02:17:15.961Z",
+        "Sections": [
+            {
+                "SectionId": "10931",
+                "_id": "5e1a81b0d1818037d00531c7",
+                "LineItems": [
+                    {
+                        "Value": "1234567890",
+                        "FieldIndex": 0,
+                        "FieldId": "16556",
+                        "_id": "5e1a81b0d1818037d00531cd"
+                    },
+                    {
+                        "Value": "ABN",
+                        "FieldIndex": 0,
+                        "FieldId": "14930",
+                        "_id": "5e1a81b0d1818037d00531cc"
+                    },
+                    {
+                        "Value": "Big Boss Inc",
+                        "FieldIndex": 0,
+                        "FieldId": "16557",
+                        "_id": "5e1a81b0d1818037d00531cb"
+                    },
+                    {
+                        "Value": "BMSIDNOTPROVIDED",
+                        "FieldIndex": 0,
+                        "FieldId": "15431",
+                        "_id": "5e1a81b0d1818037d00531ca"
+                    },
+                    {
+                        "Value": "1",
+                        "FieldIndex": 0,
+                        "FieldId": "18449",
+                        "_id": "5e1a81b0d1818037d00531c9"
+                    },
+                    {
+                        "Value": "1",
+                        "FieldIndex": 0,
+                        "FieldId": "20472",
+                        "_id": "5e1a81b0d1818037d00531c8"
+                    }
+                ]
+            },
+            {
+                "SectionId": "10932",
+                "_id": "5e1a81afd1818037d00531b8",
+                "LineItems": [
+                    {
+                        "Value": "111",
+                        "FieldIndex": 0,
+                        "FieldId": "16558",
+                        "_id": "5e1a81b0d1818037d00531c6"
+                    },
+                    {
+                        "Value": "1965-04-01",
+                        "FieldIndex": 0,
+                        "FieldId": "25443",
+                        "_id": "5e1a81b0d1818037d00531c5"
+                    },
+                    {
+                        "Value": "9999-12-31",
+                        "FieldIndex": 0,
+                        "FieldId": "25242",
+                        "_id": "5e1a81b0d1818037d00531c4"
+                    },
+                    {
+                        "Value": "123456789",
+                        "FieldIndex": 0,
+                        "FieldId": "16560",
+                        "_id": "5e1a81b0d1818037d00531c3"
+                    },
+                    {
+                        "Value": "10987654321",
+                        "FieldIndex": 0,
+                        "FieldId": "25444",
+                        "_id": "5e1a81b0d1818037d00531c2"
+                    },
+                    {
+                        "Value": "Blogs",
+                        "FieldIndex": 0,
+                        "FieldId": "16561",
+                        "_id": "5e1a81b0d1818037d00531c1"
+                    },
+                    {
+                        "Value": "Mary",
+                        "FieldIndex": 0,
+                        "FieldId": "16562",
+                        "_id": "5e1a81b0d1818037d00531c0"
+                    },
+                    {
+                        "Value": "1950-04-01",
+                        "FieldIndex": 0,
+                        "FieldId": "25445",
+                        "_id": "5e1a81b0d1818037d00531bf"
+                    },
+                    {
+                        "Value": "3 Somewhere Pl",
+                        "FieldIndex": 0,
+                        "FieldId": "16567",
+                        "_id": "5e1a81b0d1818037d00531be"
+                    },
+                    {
+                        "Value": "NowheresVill",
+                        "FieldIndex": 0,
+                        "FieldId": "16571",
+                        "_id": "5e1a81b0d1818037d00531bd"
+                    },
+                    {
+                        "Value": "ACT",
+                        "FieldIndex": 0,
+                        "FieldId": "16572",
+                        "_id": "5e1a81b0d1818037d00531bc"
+                    },
+                    {
+                        "Value": "1234",
+                        "FieldIndex": 0,
+                        "FieldId": "16573",
+                        "_id": "5e1a81afd1818037d00531bb"
+                    },
+                    {
+                        "Value": "Mary@gmail.com",
+                        "FieldIndex": 0,
+                        "FieldId": "25446",
+                        "_id": "5e1a81afd1818037d00531ba"
+                    },
+                    {
+                        "Value": "0412345678",
+                        "FieldIndex": 0,
+                        "FieldId": "25447",
+                        "_id": "5e1a81afd1818037d00531b9"
+                    }
+                ]
+            },
+            {
+                "SectionId": "10955",
+                "_id": "5e1a81afd1818037d00531b7",
+                "LineItems": []
+            },
+            {
+                "SectionId": "10933",
+                "_id": "5e1a81afd1818037d00531b0",
+                "LineItems": [
+                    {
+                        "Value": "2019-01-15",
+                        "FieldIndex": 0,
+                        "FieldId": "16580",
+                        "_id": "5e1a81afd1818037d00531b6"
+                    },
+                    {
+                        "Value": "2019-01-22",
+                        "FieldIndex": 0,
+                        "FieldId": "16582",
+                        "_id": "5e1a81afd1818037d00531b5"
+                    },
+                    {
+                        "Value": "2019",
+                        "FieldIndex": 0,
+                        "FieldId": "18450",
+                        "_id": "5e1a81afd1818037d00531b4"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "16585",
+                        "_id": "5e1a81afd1818037d00531b3"
+                    },
+                    {
+                        "Value": "2019-01-23",
+                        "FieldIndex": 0,
+                        "FieldId": "16710",
+                        "_id": "5e1a81afd1818037d00531b2"
+                    },
+                    {
+                        "Value": "N",
+                        "FieldIndex": 0,
+                        "FieldId": "25452",
+                        "_id": "5e1a81afd1818037d00531b1"
+                    }
+                ]
+            },
+            {
+                "SectionId": "10936",
+                "_id": "5e1a81afd1818037d005318e",
+                "LineItems": [
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "15470",
+                        "_id": "5e1a81afd1818037d00531af"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "15488",
+                        "_id": "5e1a81afd1818037d00531ae"
+                    },
+                    {
+                        "Value": "A",
+                        "FieldIndex": 0,
+                        "FieldId": "15453",
+                        "_id": "5e1a81afd1818037d00531ad"
+                    },
+                    {
+                        "Value": "2017-04-01",
+                        "FieldIndex": 0,
+                        "FieldId": "25453",
+                        "_id": "5e1a81afd1818037d00531ac"
+                    },
+                    {
+                        "Value": "200.02",
+                        "FieldIndex": 0,
+                        "FieldId": "25454",
+                        "_id": "5e1a81afd1818037d00531ab"
+                    },
+                    {
+                        "Value": "199.99",
+                        "FieldIndex": 0,
+                        "FieldId": "15489",
+                        "_id": "5e1a81afd1818037d00531aa"
+                    },
+                    {
+                        "Value": "0.03",
+                        "FieldIndex": 0,
+                        "FieldId": "15496",
+                        "_id": "5e1a81afd1818037d00531a9"
+                    },
+                    {
+                        "Value": "10000",
+                        "FieldIndex": 0,
+                        "FieldId": "15499",
+                        "_id": "5e1a81afd1818037d00531a8"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "15501",
+                        "_id": "5e1a81afd1818037d00531a7"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "15508",
+                        "_id": "5e1a81afd1818037d00531a6"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "15510",
+                        "_id": "5e1a81afd1818037d00531a5"
+                    },
+                    {
+                        "Value": "12000.01",
+                        "FieldIndex": 0,
+                        "FieldId": "15454",
+                        "_id": "5e1a81afd1818037d00531a4"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "25455",
+                        "_id": "5e1a81afd1818037d00531a3"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "25456",
+                        "_id": "5e1a81afd1818037d00531a2"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "15456",
+                        "_id": "5e1a81afd1818037d00531a1"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "15518",
+                        "_id": "5e1a81afd1818037d00531a0"
+                    },
+                    {
+                        "Value": "12000.01",
+                        "FieldIndex": 0,
+                        "FieldId": "25457",
+                        "_id": "5e1a81afd1818037d005319f"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "27454",
+                        "_id": "5e1a81afd1818037d005319e"
+                    },
+                    {
+                        "Value": "50.5",
+                        "FieldIndex": 0,
+                        "FieldId": "25458",
+                        "_id": "5e1a81afd1818037d005319d"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "25459",
+                        "_id": "5e1a81afd1818037d005319c"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "27613",
+                        "_id": "5e1a81afd1818037d005319b"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "27614",
+                        "_id": "5e1a81afd1818037d005319a"
+                    },
+                    {
+                        "Value": "3000.03",
+                        "FieldIndex": 0,
+                        "FieldId": "16820",
+                        "_id": "5e1a81afd1818037d0053199"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "25460",
+                        "_id": "5e1a81afd1818037d0053198"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "25461",
+                        "_id": "5e1a81afd1818037d0053197"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "25462",
+                        "_id": "5e1a81afd1818037d0053196"
+                    },
+                    {
+                        "Value": "50",
+                        "FieldIndex": 0,
+                        "FieldId": "25463",
+                        "_id": "5e1a81afd1818037d0053195"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "25464",
+                        "_id": "5e1a81afd1818037d0053194"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "27455",
+                        "_id": "5e1a81afd1818037d0053193"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "15523",
+                        "_id": "5e1a81afd1818037d0053192"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "27456",
+                        "_id": "5e1a81afd1818037d0053191"
+                    },
+                    {
+                        "Value": "30000.3",
+                        "FieldIndex": 0,
+                        "FieldId": "26716",
+                        "_id": "5e1a81afd1818037d0053190"
+                    },
+                    {
+                        "Value": "3000.03",
+                        "FieldIndex": 0,
+                        "FieldId": "26717",
+                        "_id": "5e1a81afd1818037d005318f"
+                    }
+                ]
+            },
+            {
+                "SectionId": "10939",
+                "_id": "5e1a81afd1818037d005318b",
+                "LineItems": [
+                    {
+                        "Value": "3",
+                        "FieldIndex": 0,
+                        "FieldId": "16825",
+                        "_id": "5e1a81afd1818037d005318d"
+                    },
+                    {
+                        "Value": "2.23",
+                        "FieldIndex": 0,
+                        "FieldId": "16833",
+                        "_id": "5e1a81afd1818037d005318c"
+                    }
+                ]
+            },
+            {
+                "SectionId": "10941",
+                "_id": "5e1a81afd1818037d0053186",
+                "LineItems": [
+                    {
+                        "Value": "B",
+                        "FieldIndex": 0,
+                        "FieldId": "16835",
+                        "_id": "5e1a81afd1818037d005318a"
+                    },
+                    {
+                        "Value": "Lunch Money",
+                        "FieldIndex": 0,
+                        "FieldId": "15524",
+                        "_id": "5e1a81afd1818037d0053189"
+                    },
+                    {
+                        "Value": "144.12",
+                        "FieldIndex": 0,
+                        "FieldId": "16841",
+                        "_id": "5e1a81afd1818037d0053188"
+                    },
+                    {
+                        "Value": "144.12",
+                        "FieldIndex": 0,
+                        "FieldId": "25465",
+                        "_id": "5e1a81afd1818037d0053187"
+                    }
+                ]
+            },
+            {
+                "SectionId": "10943",
+                "_id": "5e1a81afd1818037d0053182",
+                "LineItems": [
+                    {
+                        "Value": "2222.22",
+                        "FieldIndex": 0,
+                        "FieldId": "15525",
+                        "_id": "5e1a81afd1818037d0053185"
+                    },
+                    {
+                        "Value": "1111.11",
+                        "FieldIndex": 0,
+                        "FieldId": "15521",
+                        "_id": "5e1a81afd1818037d0053184"
+                    },
+                    {
+                        "Value": "1212.12",
+                        "FieldIndex": 0,
+                        "FieldId": "25466",
+                        "_id": "5e1a81afd1818037d0053183"
+                    }
+                ]
+            },
+            {
+                "SectionId": "11303",
+                "_id": "5e1a81afd1818037d0053179",
+                "LineItems": [
+                    {
+                        "Value": "C",
+                        "FieldIndex": 0,
+                        "FieldId": "25467",
+                        "_id": "5e1a81afd1818037d0053181"
+                    },
+                    {
+                        "Value": "E",
+                        "FieldIndex": 0,
+                        "FieldId": "25468",
+                        "_id": "5e1a81afd1818037d0053180"
+                    },
+                    {
+                        "Value": "Y",
+                        "FieldIndex": 0,
+                        "FieldId": "25469",
+                        "_id": "5e1a81afd1818037d005317f"
+                    },
+                    {
+                        "Value": "N",
+                        "FieldIndex": 0,
+                        "FieldId": "28130",
+                        "_id": "5e1a81afd1818037d005317e"
+                    },
+                    {
+                        "Value": "N",
+                        "FieldIndex": 0,
+                        "FieldId": "25476",
+                        "_id": "5e1a81afd1818037d005317d"
+                    },
+                    {
+                        "Value": "Y",
+                        "FieldIndex": 0,
+                        "FieldId": "25478",
+                        "_id": "5e1a81afd1818037d005317c"
+                    },
+                    {
+                        "Value": "1770-04-29",
+                        "FieldIndex": 0,
+                        "FieldId": "25479",
+                        "_id": "5e1a81afd1818037d005317b"
+                    },
+                    {
+                        "Value": "N",
+                        "FieldIndex": 0,
+                        "FieldId": "28352",
+                        "_id": "5e1a81afd1818037d005317a"
+                    }
+                ]
+            },
+            {
+                "SectionId": "60088",
+                "_id": "5e1a81afd1818037d0053172",
+                "LineItems": [
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "19537",
+                        "_id": "5e1a81afd1818037d0053178"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "61132",
+                        "_id": "5e1a81afd1818037d0053177"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "61131",
+                        "_id": "5e1a81afd1818037d0053176"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "11539",
+                        "_id": "5e1a81afd1818037d0053175"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "60955",
+                        "_id": "5e1a81afd1818037d0053174"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "11541",
+                        "_id": "5e1a81afd1818037d0053173"
+                    }
+                ]
+            },
+            {
+                "SectionId": "10958",
+                "_id": "5e1a81afd1818037d0053171",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11306",
+                "_id": "5e1a81afd1818037d0053170",
+                "LineItems": []
+            },
+            {
+                "SectionId": "10956",
+                "_id": "5e1a81afd1818037d005316f",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11120",
+                "_id": "5e1a81afd1818037d0053166",
+                "LineItems": [
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "25677",
+                        "_id": "5e1a81afd1818037d005316e"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "18452",
+                        "_id": "5e1a81afd1818037d005316d"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "25243",
+                        "_id": "5e1a81afd1818037d005316c"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "25720",
+                        "_id": "5e1a81afd1818037d005316b"
+                    },
+                    {
+                        "Value": "0",
+                        "FieldIndex": 0,
+                        "FieldId": "26140",
+                        "_id": "5e1a81afd1818037d005316a"
+                    },
+                    {
+                        "Value": "N",
+                        "FieldIndex": 0,
+                        "FieldId": "26647",
+                        "_id": "5e1a81afd1818037d0053169"
+                    },
+                    {
+                        "Value": "",
+                        "FieldIndex": 0,
+                        "FieldId": "30275",
+                        "_id": "5e1a81afd1818037d0053168"
+                    },
+                    {
+                        "Value": "N",
+                        "FieldIndex": 0,
+                        "FieldId": "30276",
+                        "_id": "5e1a81afd1818037d0053167"
+                    }
+                ]
+            },
+            {
+                "SectionId": "11121",
+                "_id": "5e1a81afd1818037d0053165",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11122",
+                "_id": "5e1a81afd1818037d0053164",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11629",
+                "_id": "5e1a81afd1818037d0053163",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11940",
+                "_id": "5e1a81afd1818037d0053162",
+                "LineItems": []
+            },
+            {
+                "SectionId": "12916",
+                "_id": "5e1a81afd1818037d0053161",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11123",
+                "_id": "5e1a81afd1818037d0053160",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11124",
+                "_id": "5e1a81afd1818037d005315f",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11125",
+                "_id": "5e1a81afd1818037d005315e",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11126",
+                "_id": "5e1a81afd1818037d005315d",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11630",
+                "_id": "5e1a81afd1818037d005315c",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11941",
+                "_id": "5e1a81afd1818037d005315b",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11127",
+                "_id": "5e1a81afd1818037d005315a",
+                "LineItems": []
+            },
+            {
+                "SectionId": "11128",
+                "_id": "5e1a81afd1818037d0053154",
+                "LineItems": [
+                    {
+                        "Value": "2019",
+                        "FieldIndex": 0,
+                        "FieldId": "18459",
+                        "_id": "5e1a81afd1818037d0053159"
+                    },
+                    {
+                        "Value": "2019-07-01",
+                        "FieldIndex": 0,
+                        "FieldId": "18460",
+                        "_id": "5e1a81afd1818037d0053158"
+                    },
+                    {
+                        "Value": "23",
+                        "FieldIndex": 0,
+                        "FieldId": "19050",
+                        "_id": "5e1a81afd1818037d0053157"
+                    },
+                    {
+                        "Value": "01",
+                        "FieldIndex": 0,
+                        "FieldId": "19056",
+                        "_id": "5e1a81afd1818037d0053156"
+                    },
+                    {
+                        "Value": "110",
+                        "FieldIndex": 0,
+                        "FieldId": "26142",
+                        "_id": "5e1a81afd1818037d0053155"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "5e1a8206c48e20b2ce6e41fb",
+        "AccountSequenceNumber": 1,
+        "ClientInternalId": 12345,
+        "FormType": "myFT6",
+        "RoleTypeCode": 5,
+        "TransactionId": 5432101,
+        "DT_Update": "1/12/2020",
+        "TM_Update": "1:18:46 PM",
+        "__v": 0,
+        "createdAt": "2020-01-12T02:18:45.531Z",
+        "updatedAt": "2020-01-12T02:18:46.684Z",
+        "Sections": [
+            {
+                "SectionName": "Fred",
+                "SectionId": "1",
+                "_id": "5e1a82069cf7232c940b6f60",
+                "LineItems": [
+                    {
+                        "Value": "1111's",
+                        "FieldIndex": 0,
+                        "FieldId": "1",
+                        "_id": "5e1a82069cf7232c940b6f62"
+                    },
+                    {
+                        "Value": "222's",
+                        "FieldIndex": 0,
+                        "FieldId": "2",
+                        "_id": "5e1a82069cf7232c940b6f61"
+                    }
+                ]
+            },
+            {
+                "SectionName": "Mary",
+                "SectionId": "2",
+                "_id": "5e1a82069cf7232c940b6f5d",
+                "LineItems": [
+                    {
+                        "Value": "more 1111's",
+                        "FieldIndex": 0,
+                        "FieldId": "1",
+                        "_id": "5e1a82069cf7232c940b6f5f"
+                    },
+                    {
+                        "Value": "333's",
+                        "FieldIndex": 0,
+                        "FieldId": "3",
+                        "_id": "5e1a82069cf7232c940b6f5e"
+                    }
+                ]
+            }
+        ]
+    }
+]

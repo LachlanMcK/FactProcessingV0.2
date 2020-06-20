@@ -1,0 +1,269 @@
+﻿{
+    "name": "TC2MCRENT",
+    "columns": [
+      {
+        "name": "CD_ENV_LANGUAGE",
+        "type": "CHAR"
+      },
+      {
+        "name": "CD_TYPE_ENTLMT",
+        "type": "CHAR"
+      },
+      {
+        "name": "DC_TYPE_ENTLMT",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_CANCELLATION",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_UPDATE_ENTLMT",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_SEND_VERFD_INCM",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_SET_COUNTER",
+        "type": "CHAR"
+      },
+      {
+        "name": "DT_EFFECT",
+        "type": "DATE"
+      },
+      {
+        "name": "DT_END",
+        "type": "DATE"
+      },
+      {
+        "name": "IN_CLK_AT_NTFY_INC",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_CLK_AT_RECON",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_CLK_AT_CLCT_PED",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_CLK_SUPP_CON",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_FTB_CLAIMANT",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_FTB_SENSITIVITY",
+        "type": "CHAR"
+      },
+      {
+        "name": "IN_OVRDE_NOR_WNDW",
+        "type": "CHAR"
+      }
+    ],
+    "rows": [
+      [
+        "E",
+        "CCC",
+        "Child Care Benefit Claimant",
+        "N",
+        "Y",
+        "N",
+        "N",
+        "1999-07-01",
+        "9999-12-31",
+        "N",
+        "N",
+        "Y",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      [
+        "E",
+        "CCP",
+        "Child Care Benefit Spouse",
+        "N",
+        "Y",
+        "N",
+        "N",
+        "1999-07-01",
+        "9999-12-31",
+        "N",
+        "N",
+        "N",
+        "Y",
+        "N",
+        "N",
+        "N"
+      ],
+      [
+        "E",
+        "CCS",
+        "Child Care Benefit Client",
+        "N",
+        "Y",
+        "Y",
+        "N",
+        "1999-07-01",
+        "9999-12-31",
+        "Y",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      [
+        "E",
+        "FAC",
+        "FTB Tax Delivery Claimant",
+        "N",
+        "N",
+        "N",
+        "N",
+        "1999-07-01",
+        "9999-12-31",
+        "Y",
+        "Y",
+        "Y",
+        "N",
+        "Y",
+        "Y",
+        "N"
+      ],
+      [
+        "E",
+        "FAS",
+        "FTB Tax Delivery Spouse",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "1999-07-01",
+        "9999-12-31",
+        "Y",
+        "N",
+        "N",
+        "Y",
+        "N",
+        "Y",
+        "N"
+      ],
+      [
+        "E",
+        "FIC",
+        "FTB Drct Pmt Clmnt (to30/6/08)",
+        "N",
+        "Y",
+        "Y",
+        "N",
+        "1999-07-01",
+        "2008-06-30",
+        "Y",
+        "Y",
+        "Y",
+        "N",
+        "Y",
+        "N",
+        "N"
+      ],
+      [
+        "E",
+        "FII",
+        "FTB Drct Pmt Clmnt (frm1/7/08)",
+        "N",
+        "Y",
+        "Y",
+        "N",
+        "2008-07-01",
+        "9999-12-31",
+        "Y",
+        "Y",
+        "Y",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      [
+        "E",
+        "FIS",
+        "FTB Direct Payment Spouse",
+        "N",
+        "Y",
+        "Y",
+        "N",
+        "1999-07-01",
+        "9999-12-31",
+        "Y",
+        "N",
+        "N",
+        "Y",
+        "N",
+        "N",
+        "N"
+      ],
+      [
+        "E",
+        "NLG",
+        "FTB Non-lodger",
+        "N",
+        "Y",
+        "N",
+        "N",
+        "1901-07-01",
+        "9999-12-31",
+        "N",
+        "Y",
+        "Y",
+        "N",
+        "N",
+        "N",
+        "Y"
+      ],
+      [
+        "E",
+        "VIC",
+        "FTB Incme for Claimant",
+        "N",
+        "Y",
+        "Y",
+        "N",
+        "1901-07-01",
+        "9999-12-31",
+        "Y",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "Y"
+      ],
+      [
+        "E",
+        "VIS",
+        "FTB Incme for Spouse",
+        "N",
+        "Y",
+        "Y",
+        "N",
+        "1901-07-01",
+        "9999-12-31",
+        "Y",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "Y"
+      ]
+    ]
+}

@@ -1,0 +1,44 @@
+﻿{
+    "name": "TC2IFREQ",
+    "columns": [
+      {
+        "name": "CD_ENV_LANGUAGE",
+        "type": "CHAR"
+      },
+      {
+        "name": "CD_INST_FREQUENCY",
+        "type": "DECIMAL"
+      },
+      {
+        "name": "DC_INST_FREQUENCY",
+        "type": "CHAR"
+      }
+    ],
+    "rows": [
+      [
+        "E",
+        "10",
+        "Monthly"
+      ],
+      [
+        "E",
+        "20",
+        "Fortnight"
+      ],
+      [
+        "E",
+        "30",
+        "Quarterly"
+      ],
+      [
+        "E",
+        "40",
+        "Weekly"
+      ],
+      [
+        "E",
+        "50",
+        "Lump Sum"
+      ]
+    ]
+}

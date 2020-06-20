@@ -1,0 +1,26 @@
+<STP>
+<Control>
+<ControlRecordCount>1</ControlRecordCount>
+<InModeCode>?</InModeCode>
+</Control>
+
+<Form>
+    <FormTransactionID>12345</FormTransactionID>
+    <FormTransactionType>???</FormTransactionType>
+    <FDFFormId>10131</FDFFormId>
+    <AccountID>1</AccountID>
+    <RoleType>IT</RoleType>
+    <FormYear>2019</FormYear>
+    <AccountPeriodBeginDate>2019-11-11</AccountPeriodBeginDate>
+    <ReceivedDate>2019-11-11</ReceivedDate>
+    <DocumentID/>
+    <Status>0</Status>
+
+    <FormLineItem>
+        <SectionName> </SectionName>
+        <FieldName> </FieldName>
+        <FieldUsage> </FieldUsage>
+        <RepeatSequenceNumber> </RepeatSequenceNumber>
+        <FieldValue> </FieldValue> f
+</Form>
+</STP>
