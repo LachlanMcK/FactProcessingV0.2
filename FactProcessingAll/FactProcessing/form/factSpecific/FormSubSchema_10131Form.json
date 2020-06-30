@@ -1,0 +1,2487 @@
+{
+    "schema": {
+        "Payer Details": {
+            "oTH_PAYER_DTLS_ClientExternalID": {
+                "alias": "16556",
+                "type": "String",
+                "maxlength": 12
+            },
+            "oTH_PAYER_DTLS_ClientExternalIdentifierTypeCode": {
+                "alias": "14930",
+                "type": "String",
+                "maxlength": 3
+            },
+            "oTH_PAYER_DTLS_UnstructuredFullName": {
+                "alias": "16557",
+                "type": "String",
+                "maxlength": 200
+            },
+            "oTH_PAYER_DTLS_DerivedClientIdentifierAustralianBusinessNumber": {
+                "alias": "23930",
+                "type": "String",
+                "maxlength": 12
+            },
+            "oTH_PAYER_DTLS_DerivedUnstructuredFullName": {
+                "alias": "23951",
+                "type": "String",
+                "maxlength": 200
+            },
+            "oTH_PAYER_DTLS_BusinessMangamentSoftwareIdentifier": {
+                "alias": "15431",
+                "type": "String",
+                "maxlength": 200
+            },
+            "oTH_PAYER_DTLS_EmployerBranchCode": {
+                "alias": "18449",
+                "type": "Number",
+                "maxlength": 7
+            },
+            "oTH_PAYER_DTLS_DerivedClientBranchNumber": {
+                "alias": "20472",
+                "type": "Number",
+                "maxlength": 7
+            }
+        },
+        "Payee Details": {
+            "15434": {
+                "type": "String",
+                "maxlength": 20
+            },
+            "oTH_PAYEE_DTLS_CurrentPayerPayeeRelationshipPayeePayrollIdentifier": {
+                "alias": "16558",
+                "type": "String",
+                "maxlength": 200
+            },
+            "oTH_PAYEE_DTLS_PayerPayeeRelationshipCommencementDate": {
+                "alias": "25443",
+                "type": "Date",
+                "maxlength": 10
+            },
+            "oTH_PAYEE_DTLS_PayerPayeeRelationshipCessationDate": {
+                "alias": "25242",
+                "type": "Date",
+                "maxlength": 10
+            },
+            "oTH_PAYEE_DTLS_ClientIdentifierTaxFileNumber": {
+                "alias": "16560",
+                "type": "String",
+                "maxlength": 12
+            },
+            "oTH_PAYEE_DTLS_ContractorClientIdentifierAustralianBusinessNumber": {
+                "alias": "25444",
+                "type": "String",
+                "maxlength": 12
+            },
+            "oTH_PAYEE_DTLS_StructuredFamilyName": {
+                "alias": "16561",
+                "type": "String",
+                "maxlength": 40
+            },
+            "oTH_PAYEE_DTLS_StructuredGivenName": {
+                "alias": "16562",
+                "type": "String",
+                "maxlength": 40
+            },
+            "oTH_PAYEE_DTLS_StructuredOtherGivenName": {
+                "alias": "16565",
+                "type": "String",
+                "maxlength": 40
+            },
+            "oTH_PAYEE_DTLS_IndividualBirthDate": {
+                "alias": "25445",
+                "type": "Date",
+                "maxlength": 10
+            },
+            "oTH_PAYEE_DTLS_UnstructuredGeographicAddressLine1": {
+                "alias": "16567",
+                "type": "String",
+                "maxlength": 38
+            },
+            "oTH_PAYEE_DTLS_UnstructuredGeographicAddressLine2": {
+                "alias": "16568",
+                "type": "String",
+                "maxlength": 38
+            },
+            "oTH_PAYEE_DTLS_StructuredGeographicAddressLocalityName": {
+                "alias": "16571",
+                "type": "String",
+                "maxlength": 46
+            },
+            "oTH_PAYEE_DTLS_StructuredGeographicAddressStateCode": {
+                "alias": "16572",
+                "type": "String",
+                "maxlength": 3
+            },
+            "oTH_PAYEE_DTLS_StructuredGeographicAddressPostcode": {
+                "alias": "16573",
+                "type": "String",
+                "maxlength": 12
+            },
+            "oTH_PAYEE_DTLS_CountryCode": {
+                "alias": "16574",
+                "type": "String",
+                "maxlength": 3
+            },
+            "oTH_PAYEE_DTLS_PayeeInternetEmailAddress": {
+                "alias": "25446",
+                "type": "String",
+                "maxlength": 200
+            },
+            "oTH_PAYEE_DTLS_PayeeTelephoneNumber": {
+                "alias": "25447",
+                "type": "String",
+                "maxlength": 16
+            }
+        },
+        "Payroll Event": {
+            "oTH_PAYROLL_EVNT_PayrollEventPeriodStartDate": {
+                "alias": "16580",
+                "type": "Date",
+                "maxlength": 10
+            },
+            "oTH_PAYROLL_EVNT_PayrollEventPeriodEndDate": {
+                "alias": "16582",
+                "type": "Date",
+                "maxlength": 10
+            },
+            "oTH_PAYROLL_EVNT_FinancialYear": {
+                "alias": "18450",
+                "type": "Number",
+                "maxlength": 4
+            },
+            "oTH_PAYROLL_EVNT_LodgmentDate": {
+                "alias": "16585",
+                "type": "Date",
+                "maxlength": 10
+            },
+            "oTH_PAYROLL_EVNT_PaymentDate": {
+                "alias": "16710",
+                "type": "Date",
+                "maxlength": 10
+            },
+            "oTH_PAYROLL_EVNT_PayrollMessageTimestampSourceDatetime": {
+                "alias": "25451",
+                "type": "String",
+                "maxlength": 26
+            },
+            "oTH_PAYROLL_EVNT_PayrollEventFinalIndicator": {
+                "alias": "25452",
+                "type": "String",
+                "maxlength": 1
+            }
+        },
+        "Wage And Taxation Item": {
+            "27613": {
+                "type": [
+                    "String"
+                ],
+                "maxlength": 1
+            },
+            "27614": {
+                "type": [
+                    "Number"
+                ],
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeForeignIncomeExemptAmount": {
+                "alias": "15470",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeCommunityDevelopmentEmploymentProjectAmount": {
+                "alias": "15488",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_SectionGroup5": {
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTypeCode": {
+                    "alias": "15453",
+                    "type": [
+                        "String"
+                    ],
+                    "maxlength": 3
+                },
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentPaymentDate": {
+                    "alias": "25453",
+                    "type": [
+                        "Date"
+                    ],
+                    "maxlength": 10
+                },
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTaxWithheldTotalAmount": {
+                    "alias": "25454",
+                    "type": [
+                        "Number"
+                    ],
+                    "maxlength": 13
+                },
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTaxFreeAmount": {
+                    "alias": "15489",
+                    "type": [
+                        "Number"
+                    ],
+                    "maxlength": 13
+                },
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTaxableComponentAmount": {
+                    "alias": "15496",
+                    "type": [
+                        "Number"
+                    ],
+                    "maxlength": 13
+                }
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumACode": {
+                "alias": "16787",
+                "type": "String",
+                "maxlength": 3
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumAAmount": {
+                "alias": "15499",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumBAmount": {
+                "alias": "15501",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumDAmount": {
+                "alias": "15508",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumEAmount": {
+                "alias": "15510",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeYearToDateIncomeGrossAmount": {
+                "alias": "15454",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeForeignIncomeEmploymentGrossAmount": {
+                "alias": "25455",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeForeignIncomeEmploymentJointPetroleumDevelopmentAreaGrossAmount": {
+                "alias": "25456",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeLabourHireArrangementGrossAmount": {
+                "alias": "15456",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeVoluntaryAgreementGrossAmount": {
+                "alias": "15518",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeOtherAmount": {
+                "alias": "25457",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeWorkingHolidayMakerYearToDateGrossAmount": {
+                "alias": "27454",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeFringeBenefitsReportableTaxableAmount": {
+                "alias": "25458",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeFringeBenefitsReportableExemptAmount": {
+                "alias": "25459",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingYearToDateWithheldAmount": {
+                "alias": "16820",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingForeignEmploymentIncomeTotalAmount": {
+                "alias": "25460",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingForeignEmploymentIncomeJointPetroleumDevelopmentAreaTotalAmount": {
+                "alias": "25461",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingLabourHireTotalAmount": {
+                "alias": "25462",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingVoluntaryAgreementTotalAmount": {
+                "alias": "25463",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingOtherSpecifiedTotalAmount": {
+                "alias": "25464",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingWorkingHolidayMakerYearToDateTotalAmount": {
+                "alias": "27455",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_YearToDateForeignIncomeEmploymentTaxCreditWithheldAmount": {
+                "alias": "15523",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_JointPetroleumDevelopmentAreaForeignIncomeEmploymentTaxPaidYearToDateAmount": {
+                "alias": "27456",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PaymentSummaryTotalGrossPaymentAmount": {
+                "alias": "26716",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_WAGE_AND_TAX_ITEM_TaxWithheldTotalAmount": {
+                "alias": "26717",
+                "type": "Number",
+                "maxlength": 13
+            }
+        },
+        "Deduction Item": {
+            "27616": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "27618": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_DEDUCTION_ITEM_SectionGroup3": {
+                "oTH_DEDUCTION_ITEM_IndividualDeductionTypeCode": {
+                    "alias": "16825",
+                    "type": [
+                        "String"
+                    ],
+                    "maxlength": 3
+                },
+                "oTH_DEDUCTION_ITEM_IndividualDeductionYearToDateAmount": {
+                    "alias": "16833",
+                    "type": [
+                        "Number"
+                    ],
+                    "maxlength": 13
+                }
+            }
+        },
+        "Allowance Item": {
+            "oTH_ALLOWANCE_ITEM_SectionGroup4": {
+                "oTH_ALLOWANCE_ITEM_AllowanceIncomeTypeCode": {
+                    "alias": "16835",
+                    "type": [
+                        "String"
+                    ],
+                    "maxlength": 3
+                },
+                "oTH_ALLOWANCE_ITEM_AllowanceIncomeTypeOtherDescriptionText": {
+                    "alias": "15524",
+                    "type": [
+                        "String"
+                    ],
+                    "maxlength": 40
+                },
+                "oTH_ALLOWANCE_ITEM_AllowanceIncomeYearToDateAmount": {
+                    "alias": "16841",
+                    "type": [
+                        "Number"
+                    ],
+                    "maxlength": 13
+                }
+            },
+            "oTH_ALLOWANCE_ITEM_AllowanceIncomeTotalAmount": {
+                "alias": "25465",
+                "type": "Number",
+                "maxlength": 13
+            }
+        },
+        "Super Entitlement": {
+            "oTH_SUPER_ENTITLEMENT_YearToDateSuperannuationGuaranteeEmployerContributionAmount": {
+                "alias": "15525",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_SUPER_ENTITLEMENT_YearToDateSuperannuationGuaranteeOrdinaryTimeEarningsAmount": {
+                "alias": "15521",
+                "type": "Number",
+                "maxlength": 13
+            },
+            "oTH_SUPER_ENTITLEMENT_EmployerSuperannuationContributionReportableAmount": {
+                "alias": "25466",
+                "type": "Number",
+                "maxlength": 13
+            }
+        },
+        "TFN Declaration": {
+            "11539": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "11541": {
+                "type": "String",
+                "maxlength": 12
+            },
+            "18451": {
+                "type": "String",
+                "maxlength": 13
+            },
+            "18452": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "18453": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "18457": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "18459": {
+                "type": "Number",
+                "maxlength": 4
+            },
+            "18460": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "18464": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "18466": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "18600": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "18610": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "18613": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "18615": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "18616": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "18641": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "18648": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "19050": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "19056": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "19537": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "23952": {
+                "type": "String",
+                "maxlength": 12
+            },
+            "25243": {
+                "type": "String",
+                "maxlength": 12
+            },
+            "25246": {
+                "type": "String",
+                "maxlength": 13
+            },
+            "25247": {
+                "type": "String",
+                "maxlength": 13
+            },
+            "25267": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25268": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25269": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25270": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25390": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25391": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25470": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25471": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25472": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25473": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25474": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "25475": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25477": {
+                "type": "String",
+                "maxlength": 200
+            },
+            "25480": {
+                "type": [
+                    "String"
+                ],
+                "maxlength": 30
+            },
+            "25481": {
+                "type": [
+                    "Number"
+                ],
+                "maxlength": 7
+            },
+            "25677": {
+                "type": "String",
+                "maxlength": 13
+            },
+            "25720": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25721": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25722": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25723": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25724": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "25725": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "25726": {
+                "type": "Number",
+                "maxlength": 7
+            },
+            "25727": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "25728": {
+                "type": "Number",
+                "maxlength": 7
+            },
+            "25747": {
+                "type": "String",
+                "maxlength": 26
+            },
+            "25748": {
+                "type": "String",
+                "maxlength": 26
+            },
+            "25749": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "25750": {
+                "type": "String",
+                "maxlength": 26
+            },
+            "25751": {
+                "type": "String",
+                "maxlength": 26
+            },
+            "25753": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25754": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "25755": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "25756": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25757": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25760": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25761": {
+                "type": "String",
+                "maxlength": 13
+            },
+            "25762": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "25770": {
+                "type": "String",
+                "maxlength": 13
+            },
+            "25771": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "26140": {
+                "type": "String",
+                "maxlength": 13
+            },
+            "26142": {
+                "type": "Number",
+                "maxlength": 7
+            },
+            "26183": {
+                "type": "String",
+                "maxlength": 13
+            },
+            "26188": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "26189": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "26191": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "26220": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "26222": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "26647": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "26740": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "26741": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "26744": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "27073": {
+                "type": "Number",
+                "maxlength": 7
+            },
+            "27074": {
+                "type": "String",
+                "maxlength": 8
+            },
+            "27666": {
+                "type": "Number",
+                "maxlength": 7
+            },
+            "30275": {
+                "type": "Date",
+                "maxlength": 10
+            },
+            "30276": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "30517": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "30531": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "30537": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "30558": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "30565": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "30567": {
+                "type": "String",
+                "maxlength": 13
+            },
+            "30585": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "31537": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "60955": {
+                "type": "String",
+                "maxlength": 12
+            },
+            "60956": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "61131": {
+                "type": "String",
+                "maxlength": 1
+            },
+            "61132": {
+                "type": "Number",
+                "maxlength": 13
+            },
+            "61893": {
+                "type": "Number",
+                "maxlength": 11
+            },
+            "61894": {
+                "type": "String",
+                "maxlength": 3
+            },
+            "61895": {
+                "type": "String",
+                "maxlength": 3
+            },
+            "63457": {
+                "type": "String",
+                "maxlength": 12
+            },
+            "95230": {
+                "type": "String",
+                "maxlength": 200
+            },
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipPaymentBasisCode": {
+                "alias": "25467",
+                "type": "String",
+                "maxlength": 3
+            },
+            "oTH_TFN_DECLARATION_PayeeClientResidentStatusCode": {
+                "alias": "25468",
+                "type": "String",
+                "maxlength": 3
+            },
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipTaxFreeThresholdClaimedIndicator": {
+                "alias": "25469",
+                "type": "String",
+                "maxlength": 1
+            },
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipStudyandTrainingLoanRepaymentClaimedIndicator": {
+                "alias": "28130",
+                "type": "String",
+                "maxlength": 1
+            },
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipStudentFinancialSupplementDebtClaimedIndicator": {
+                "alias": "25476",
+                "type": "String",
+                "maxlength": 1
+            },
+            "oTH_TFN_DECLARATION_PayeeDeclarationIndicator": {
+                "alias": "25478",
+                "type": "String",
+                "maxlength": 1
+            },
+            "oTH_TFN_DECLARATION_PayeeDeclarationDate": {
+                "alias": "25479",
+                "type": "Date",
+                "maxlength": 10
+            },
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipTerminatedIndicator": {
+                "alias": "28352",
+                "type": "String",
+                "maxlength": 1
+            }
+        }
+    },
+    "byId": {
+        "10931": {
+            "14930": [
+                "",
+                "oTH_PAYER_DTLS_ClientExternalIdentifierTypeCode"
+            ],
+            "15431": [
+                "",
+                "oTH_PAYER_DTLS_BusinessMangamentSoftwareIdentifier"
+            ],
+            "16556": [
+                "",
+                "oTH_PAYER_DTLS_ClientExternalID"
+            ],
+            "16557": [
+                "",
+                "oTH_PAYER_DTLS_UnstructuredFullName"
+            ],
+            "18449": [
+                "",
+                "oTH_PAYER_DTLS_EmployerBranchCode"
+            ],
+            "20472": [
+                "",
+                "oTH_PAYER_DTLS_DerivedClientBranchNumber"
+            ],
+            "23930": [
+                "",
+                "oTH_PAYER_DTLS_DerivedClientIdentifierAustralianBusinessNumber"
+            ],
+            "23951": [
+                "",
+                "oTH_PAYER_DTLS_DerivedUnstructuredFullName"
+            ],
+            "sName": "Payer Details"
+        },
+        "10932": {
+            "15434": [
+                "",
+                15434
+            ],
+            "16558": [
+                "",
+                "oTH_PAYEE_DTLS_CurrentPayerPayeeRelationshipPayeePayrollIdentifier"
+            ],
+            "16560": [
+                "",
+                "oTH_PAYEE_DTLS_ClientIdentifierTaxFileNumber"
+            ],
+            "16561": [
+                "",
+                "oTH_PAYEE_DTLS_StructuredFamilyName"
+            ],
+            "16562": [
+                "",
+                "oTH_PAYEE_DTLS_StructuredGivenName"
+            ],
+            "16565": [
+                "",
+                "oTH_PAYEE_DTLS_StructuredOtherGivenName"
+            ],
+            "16567": [
+                "",
+                "oTH_PAYEE_DTLS_UnstructuredGeographicAddressLine1"
+            ],
+            "16568": [
+                "",
+                "oTH_PAYEE_DTLS_UnstructuredGeographicAddressLine2"
+            ],
+            "16571": [
+                "",
+                "oTH_PAYEE_DTLS_StructuredGeographicAddressLocalityName"
+            ],
+            "16572": [
+                "",
+                "oTH_PAYEE_DTLS_StructuredGeographicAddressStateCode"
+            ],
+            "16573": [
+                "",
+                "oTH_PAYEE_DTLS_StructuredGeographicAddressPostcode"
+            ],
+            "16574": [
+                "",
+                "oTH_PAYEE_DTLS_CountryCode"
+            ],
+            "25242": [
+                "",
+                "oTH_PAYEE_DTLS_PayerPayeeRelationshipCessationDate"
+            ],
+            "25443": [
+                "",
+                "oTH_PAYEE_DTLS_PayerPayeeRelationshipCommencementDate"
+            ],
+            "25444": [
+                "",
+                "oTH_PAYEE_DTLS_ContractorClientIdentifierAustralianBusinessNumber"
+            ],
+            "25445": [
+                "",
+                "oTH_PAYEE_DTLS_IndividualBirthDate"
+            ],
+            "25446": [
+                "",
+                "oTH_PAYEE_DTLS_PayeeInternetEmailAddress"
+            ],
+            "25447": [
+                "",
+                "oTH_PAYEE_DTLS_PayeeTelephoneNumber"
+            ],
+            "sName": "Payee Details"
+        },
+        "10933": {
+            "16580": [
+                "",
+                "oTH_PAYROLL_EVNT_PayrollEventPeriodStartDate"
+            ],
+            "16582": [
+                "",
+                "oTH_PAYROLL_EVNT_PayrollEventPeriodEndDate"
+            ],
+            "16585": [
+                "",
+                "oTH_PAYROLL_EVNT_LodgmentDate"
+            ],
+            "16710": [
+                "",
+                "oTH_PAYROLL_EVNT_PaymentDate"
+            ],
+            "18450": [
+                "",
+                "oTH_PAYROLL_EVNT_FinancialYear"
+            ],
+            "25451": [
+                "",
+                "oTH_PAYROLL_EVNT_PayrollMessageTimestampSourceDatetime"
+            ],
+            "25452": [
+                "",
+                "oTH_PAYROLL_EVNT_PayrollEventFinalIndicator"
+            ],
+            "sName": "Payroll Event"
+        },
+        "10936": {
+            "15453": [
+                "oTH_WAGE_AND_TAX_ITEM_SectionGroup5",
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTypeCode"
+            ],
+            "15454": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeYearToDateIncomeGrossAmount"
+            ],
+            "15456": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeLabourHireArrangementGrossAmount"
+            ],
+            "15470": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeForeignIncomeExemptAmount"
+            ],
+            "15488": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeCommunityDevelopmentEmploymentProjectAmount"
+            ],
+            "15489": [
+                "oTH_WAGE_AND_TAX_ITEM_SectionGroup5",
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTaxFreeAmount"
+            ],
+            "15496": [
+                "oTH_WAGE_AND_TAX_ITEM_SectionGroup5",
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTaxableComponentAmount"
+            ],
+            "15499": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumAAmount"
+            ],
+            "15501": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumBAmount"
+            ],
+            "15508": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumDAmount"
+            ],
+            "15510": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumEAmount"
+            ],
+            "15518": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeVoluntaryAgreementGrossAmount"
+            ],
+            "15523": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_YearToDateForeignIncomeEmploymentTaxCreditWithheldAmount"
+            ],
+            "16787": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumACode"
+            ],
+            "16820": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingYearToDateWithheldAmount"
+            ],
+            "25453": [
+                "oTH_WAGE_AND_TAX_ITEM_SectionGroup5",
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentPaymentDate"
+            ],
+            "25454": [
+                "oTH_WAGE_AND_TAX_ITEM_SectionGroup5",
+                "oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTaxWithheldTotalAmount"
+            ],
+            "25455": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeForeignIncomeEmploymentGrossAmount"
+            ],
+            "25456": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeForeignIncomeEmploymentJointPetroleumDevelopmentAreaGrossAmount"
+            ],
+            "25457": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeOtherAmount"
+            ],
+            "25458": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeFringeBenefitsReportableTaxableAmount"
+            ],
+            "25459": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeFringeBenefitsReportableExemptAmount"
+            ],
+            "25460": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingForeignEmploymentIncomeTotalAmount"
+            ],
+            "25461": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingForeignEmploymentIncomeJointPetroleumDevelopmentAreaTotalAmount"
+            ],
+            "25462": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingLabourHireTotalAmount"
+            ],
+            "25463": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingVoluntaryAgreementTotalAmount"
+            ],
+            "25464": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingOtherSpecifiedTotalAmount"
+            ],
+            "26716": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PaymentSummaryTotalGrossPaymentAmount"
+            ],
+            "26717": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_TaxWithheldTotalAmount"
+            ],
+            "27454": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeWorkingHolidayMakerYearToDateGrossAmount"
+            ],
+            "27455": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingWorkingHolidayMakerYearToDateTotalAmount"
+            ],
+            "27456": [
+                "",
+                "oTH_WAGE_AND_TAX_ITEM_JointPetroleumDevelopmentAreaForeignIncomeEmploymentTaxPaidYearToDateAmount"
+            ],
+            "27613": [
+                "",
+                27613
+            ],
+            "27614": [
+                "",
+                27614
+            ],
+            "sName": "Wage And Taxation Item"
+        },
+        "10939": {
+            "16825": [
+                "oTH_DEDUCTION_ITEM_SectionGroup3",
+                "oTH_DEDUCTION_ITEM_IndividualDeductionTypeCode"
+            ],
+            "16833": [
+                "oTH_DEDUCTION_ITEM_SectionGroup3",
+                "oTH_DEDUCTION_ITEM_IndividualDeductionYearToDateAmount"
+            ],
+            "27616": [
+                "",
+                27616
+            ],
+            "27618": [
+                "",
+                27618
+            ],
+            "sName": "Deduction Item"
+        },
+        "10941": {
+            "15524": [
+                "oTH_ALLOWANCE_ITEM_SectionGroup4",
+                "oTH_ALLOWANCE_ITEM_AllowanceIncomeTypeOtherDescriptionText"
+            ],
+            "16835": [
+                "oTH_ALLOWANCE_ITEM_SectionGroup4",
+                "oTH_ALLOWANCE_ITEM_AllowanceIncomeTypeCode"
+            ],
+            "16841": [
+                "oTH_ALLOWANCE_ITEM_SectionGroup4",
+                "oTH_ALLOWANCE_ITEM_AllowanceIncomeYearToDateAmount"
+            ],
+            "25465": [
+                "",
+                "oTH_ALLOWANCE_ITEM_AllowanceIncomeTotalAmount"
+            ],
+            "sName": "Allowance Item"
+        },
+        "10943": {
+            "15521": [
+                "",
+                "oTH_SUPER_ENTITLEMENT_YearToDateSuperannuationGuaranteeOrdinaryTimeEarningsAmount"
+            ],
+            "15525": [
+                "",
+                "oTH_SUPER_ENTITLEMENT_YearToDateSuperannuationGuaranteeEmployerContributionAmount"
+            ],
+            "25466": [
+                "",
+                "oTH_SUPER_ENTITLEMENT_EmployerSuperannuationContributionReportableAmount"
+            ],
+            "sName": "Super Entitlement"
+        },
+        "10955": {
+            "sName": "Payee Details"
+        },
+        "10956": {
+            "sName": "TFN Declaration"
+        },
+        "10958": {
+            "sName": "TFN Declaration"
+        },
+        "11120": {
+            "18451": [
+                "",
+                18451
+            ],
+            "18452": [
+                "",
+                18452
+            ],
+            "18453": [
+                "",
+                18453
+            ],
+            "18464": [
+                "",
+                18464
+            ],
+            "18466": [
+                "",
+                18466
+            ],
+            "18600": [
+                "",
+                18600
+            ],
+            "18613": [
+                "",
+                18613
+            ],
+            "18615": [
+                "",
+                18615
+            ],
+            "23952": [
+                "",
+                23952
+            ],
+            "25243": [
+                "",
+                25243
+            ],
+            "25246": [
+                "",
+                25246
+            ],
+            "25247": [
+                "",
+                25247
+            ],
+            "25677": [
+                "",
+                25677
+            ],
+            "25720": [
+                "",
+                25720
+            ],
+            "25721": [
+                "",
+                25721
+            ],
+            "25722": [
+                "",
+                25722
+            ],
+            "25723": [
+                "",
+                25723
+            ],
+            "25724": [
+                "",
+                25724
+            ],
+            "25725": [
+                "",
+                25725
+            ],
+            "25726": [
+                "",
+                25726
+            ],
+            "25727": [
+                "",
+                25727
+            ],
+            "25728": [
+                "",
+                25728
+            ],
+            "26140": [
+                "",
+                26140
+            ],
+            "26183": [
+                "",
+                26183
+            ],
+            "26647": [
+                "",
+                26647
+            ],
+            "30275": [
+                "",
+                30275
+            ],
+            "30276": [
+                "",
+                30276
+            ],
+            "30585": [
+                "",
+                30585
+            ],
+            "sName": "TFN Declaration"
+        },
+        "11121": {
+            "sName": "TFN Declaration"
+        },
+        "11122": {
+            "sName": "TFN Declaration"
+        },
+        "11123": {
+            "sName": "TFN Declaration"
+        },
+        "11124": {
+            "sName": "TFN Declaration"
+        },
+        "11125": {
+            "sName": "TFN Declaration"
+        },
+        "11126": {
+            "sName": "TFN Declaration"
+        },
+        "11127": {
+            "sName": "TFN Declaration"
+        },
+        "11128": {
+            "18457": [
+                "",
+                18457
+            ],
+            "18459": [
+                "",
+                18459
+            ],
+            "18460": [
+                "",
+                18460
+            ],
+            "18610": [
+                "",
+                18610
+            ],
+            "18616": [
+                "",
+                18616
+            ],
+            "18641": [
+                "",
+                18641
+            ],
+            "18648": [
+                "",
+                18648
+            ],
+            "19050": [
+                "",
+                19050
+            ],
+            "19056": [
+                "",
+                19056
+            ],
+            "25267": [
+                "",
+                25267
+            ],
+            "25268": [
+                "",
+                25268
+            ],
+            "25269": [
+                "",
+                25269
+            ],
+            "25270": [
+                "",
+                25270
+            ],
+            "25390": [
+                "",
+                25390
+            ],
+            "25391": [
+                "",
+                25391
+            ],
+            "25747": [
+                "",
+                25747
+            ],
+            "25748": [
+                "",
+                25748
+            ],
+            "25749": [
+                "",
+                25749
+            ],
+            "25750": [
+                "",
+                25750
+            ],
+            "25751": [
+                "",
+                25751
+            ],
+            "25753": [
+                "",
+                25753
+            ],
+            "25754": [
+                "",
+                25754
+            ],
+            "25755": [
+                "",
+                25755
+            ],
+            "25756": [
+                "",
+                25756
+            ],
+            "25757": [
+                "",
+                25757
+            ],
+            "25760": [
+                "",
+                25760
+            ],
+            "25761": [
+                "",
+                25761
+            ],
+            "25762": [
+                "",
+                25762
+            ],
+            "25770": [
+                "",
+                25770
+            ],
+            "25771": [
+                "",
+                25771
+            ],
+            "26142": [
+                "",
+                26142
+            ],
+            "26188": [
+                "",
+                26188
+            ],
+            "26189": [
+                "",
+                26189
+            ],
+            "26191": [
+                "",
+                26191
+            ],
+            "26220": [
+                "",
+                26220
+            ],
+            "26222": [
+                "",
+                26222
+            ],
+            "26740": [
+                "",
+                26740
+            ],
+            "26741": [
+                "",
+                26741
+            ],
+            "26744": [
+                "",
+                26744
+            ],
+            "27073": [
+                "",
+                27073
+            ],
+            "27074": [
+                "",
+                27074
+            ],
+            "27666": [
+                "",
+                27666
+            ],
+            "30517": [
+                "",
+                30517
+            ],
+            "30531": [
+                "",
+                30531
+            ],
+            "30537": [
+                "",
+                30537
+            ],
+            "30558": [
+                "",
+                30558
+            ],
+            "30565": [
+                "",
+                30565
+            ],
+            "30567": [
+                "",
+                30567
+            ],
+            "31537": [
+                "",
+                31537
+            ],
+            "sName": "TFN Declaration"
+        },
+        "11303": {
+            "25467": [
+                "",
+                "oTH_TFN_DECLARATION_PayerPayeeRelationshipPaymentBasisCode"
+            ],
+            "25468": [
+                "",
+                "oTH_TFN_DECLARATION_PayeeClientResidentStatusCode"
+            ],
+            "25469": [
+                "",
+                "oTH_TFN_DECLARATION_PayerPayeeRelationshipTaxFreeThresholdClaimedIndicator"
+            ],
+            "25470": [
+                "",
+                25470
+            ],
+            "25471": [
+                "",
+                25471
+            ],
+            "25472": [
+                "",
+                25472
+            ],
+            "25473": [
+                "",
+                25473
+            ],
+            "25474": [
+                "",
+                25474
+            ],
+            "25475": [
+                "",
+                25475
+            ],
+            "25476": [
+                "",
+                "oTH_TFN_DECLARATION_PayerPayeeRelationshipStudentFinancialSupplementDebtClaimedIndicator"
+            ],
+            "25477": [
+                "",
+                25477
+            ],
+            "25478": [
+                "",
+                "oTH_TFN_DECLARATION_PayeeDeclarationIndicator"
+            ],
+            "25479": [
+                "",
+                "oTH_TFN_DECLARATION_PayeeDeclarationDate"
+            ],
+            "28130": [
+                "",
+                "oTH_TFN_DECLARATION_PayerPayeeRelationshipStudyandTrainingLoanRepaymentClaimedIndicator"
+            ],
+            "28352": [
+                "",
+                "oTH_TFN_DECLARATION_PayerPayeeRelationshipTerminatedIndicator"
+            ],
+            "sName": "TFN Declaration"
+        },
+        "11306": {
+            "25480": [
+                "",
+                25480
+            ],
+            "25481": [
+                "",
+                25481
+            ],
+            "sName": "TFN Declaration"
+        },
+        "11629": {
+            "sName": "TFN Declaration"
+        },
+        "11630": {
+            "sName": "TFN Declaration"
+        },
+        "11940": {
+            "sName": "TFN Declaration"
+        },
+        "11941": {
+            "sName": "TFN Declaration"
+        },
+        "12916": {
+            "sName": "TFN Declaration"
+        },
+        "60088": {
+            "11539": [
+                "",
+                11539
+            ],
+            "11541": [
+                "",
+                11541
+            ],
+            "19537": [
+                "",
+                19537
+            ],
+            "60955": [
+                "",
+                60955
+            ],
+            "60956": [
+                "",
+                60956
+            ],
+            "61131": [
+                "",
+                61131
+            ],
+            "61132": [
+                "",
+                61132
+            ],
+            "61893": [
+                "",
+                61893
+            ],
+            "61894": [
+                "",
+                61894
+            ],
+            "61895": [
+                "",
+                61895
+            ],
+            "63457": [
+                "",
+                63457
+            ],
+            "95230": [
+                "",
+                95230
+            ],
+            "sName": "TFN Declaration"
+        }
+    },
+    "byName": {
+        "Payer Details": {
+            "sIds": [
+                "10931"
+            ],
+            "oTH_PAYER_DTLS_ClientExternalID": {
+                "sId": 10931,
+                "fId": "16556"
+            },
+            "oTH_PAYER_DTLS_ClientExternalIdentifierTypeCode": {
+                "sId": 10931,
+                "fId": "14930"
+            },
+            "oTH_PAYER_DTLS_UnstructuredFullName": {
+                "sId": 10931,
+                "fId": "16557"
+            },
+            "oTH_PAYER_DTLS_DerivedClientIdentifierAustralianBusinessNumber": {
+                "sId": 10931,
+                "fId": "23930"
+            },
+            "oTH_PAYER_DTLS_DerivedUnstructuredFullName": {
+                "sId": 10931,
+                "fId": "23951"
+            },
+            "oTH_PAYER_DTLS_BusinessMangamentSoftwareIdentifier": {
+                "sId": 10931,
+                "fId": "15431"
+            },
+            "oTH_PAYER_DTLS_EmployerBranchCode": {
+                "sId": 10931,
+                "fId": "18449"
+            },
+            "oTH_PAYER_DTLS_DerivedClientBranchNumber": {
+                "sId": 10931,
+                "fId": "20472"
+            }
+        },
+        "Payee Details": {
+            "15434": {
+                "sId": 10932,
+                "fId": 15434
+            },
+            "sIds": [
+                "10932",
+                "10955"
+            ],
+            "oTH_PAYEE_DTLS_CurrentPayerPayeeRelationshipPayeePayrollIdentifier": {
+                "sId": 10932,
+                "fId": "16558"
+            },
+            "oTH_PAYEE_DTLS_PayerPayeeRelationshipCommencementDate": {
+                "sId": 10932,
+                "fId": "25443"
+            },
+            "oTH_PAYEE_DTLS_PayerPayeeRelationshipCessationDate": {
+                "sId": 10932,
+                "fId": "25242"
+            },
+            "oTH_PAYEE_DTLS_ClientIdentifierTaxFileNumber": {
+                "sId": 10932,
+                "fId": "16560"
+            },
+            "oTH_PAYEE_DTLS_ContractorClientIdentifierAustralianBusinessNumber": {
+                "sId": 10932,
+                "fId": "25444"
+            },
+            "oTH_PAYEE_DTLS_StructuredFamilyName": {
+                "sId": 10932,
+                "fId": "16561"
+            },
+            "oTH_PAYEE_DTLS_StructuredGivenName": {
+                "sId": 10932,
+                "fId": "16562"
+            },
+            "oTH_PAYEE_DTLS_StructuredOtherGivenName": {
+                "sId": 10932,
+                "fId": "16565"
+            },
+            "oTH_PAYEE_DTLS_IndividualBirthDate": {
+                "sId": 10932,
+                "fId": "25445"
+            },
+            "oTH_PAYEE_DTLS_UnstructuredGeographicAddressLine1": {
+                "sId": 10932,
+                "fId": "16567"
+            },
+            "oTH_PAYEE_DTLS_UnstructuredGeographicAddressLine2": {
+                "sId": 10932,
+                "fId": "16568"
+            },
+            "oTH_PAYEE_DTLS_StructuredGeographicAddressLocalityName": {
+                "sId": 10932,
+                "fId": "16571"
+            },
+            "oTH_PAYEE_DTLS_StructuredGeographicAddressStateCode": {
+                "sId": 10932,
+                "fId": "16572"
+            },
+            "oTH_PAYEE_DTLS_StructuredGeographicAddressPostcode": {
+                "sId": 10932,
+                "fId": "16573"
+            },
+            "oTH_PAYEE_DTLS_CountryCode": {
+                "sId": 10932,
+                "fId": "16574"
+            },
+            "oTH_PAYEE_DTLS_PayeeInternetEmailAddress": {
+                "sId": 10932,
+                "fId": "25446"
+            },
+            "oTH_PAYEE_DTLS_PayeeTelephoneNumber": {
+                "sId": 10932,
+                "fId": "25447"
+            }
+        },
+        "Payroll Event": {
+            "sIds": [
+                "10933"
+            ],
+            "oTH_PAYROLL_EVNT_PayrollEventPeriodStartDate": {
+                "sId": 10933,
+                "fId": "16580"
+            },
+            "oTH_PAYROLL_EVNT_PayrollEventPeriodEndDate": {
+                "sId": 10933,
+                "fId": "16582"
+            },
+            "oTH_PAYROLL_EVNT_FinancialYear": {
+                "sId": 10933,
+                "fId": "18450"
+            },
+            "oTH_PAYROLL_EVNT_LodgmentDate": {
+                "sId": 10933,
+                "fId": "16585"
+            },
+            "oTH_PAYROLL_EVNT_PaymentDate": {
+                "sId": 10933,
+                "fId": "16710"
+            },
+            "oTH_PAYROLL_EVNT_PayrollMessageTimestampSourceDatetime": {
+                "sId": 10933,
+                "fId": "25451"
+            },
+            "oTH_PAYROLL_EVNT_PayrollEventFinalIndicator": {
+                "sId": 10933,
+                "fId": "25452"
+            }
+        },
+        "Wage And Taxation Item": {
+            "27613": {
+                "sId": 10936,
+                "fId": 27613
+            },
+            "27614": {
+                "sId": 10936,
+                "fId": 27614
+            },
+            "sIds": [
+                "10936"
+            ],
+            "oTH_WAGE_AND_TAX_ITEM_PayeeForeignIncomeExemptAmount": {
+                "sId": 10936,
+                "fId": "15470"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeCommunityDevelopmentEmploymentProjectAmount": {
+                "sId": 10936,
+                "fId": "15488"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_SectionGroup5.oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTypeCode": {
+                "sId": 10936,
+                "fId": "15453"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_SectionGroup5.oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentPaymentDate": {
+                "sId": 10936,
+                "fId": "25453"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_SectionGroup5.oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTaxWithheldTotalAmount": {
+                "sId": 10936,
+                "fId": "25454"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_SectionGroup5.oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTaxFreeAmount": {
+                "sId": 10936,
+                "fId": "15489"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_SectionGroup5.oTH_WAGE_AND_TAX_ITEM_EmploymentTerminationPaymentTaxableComponentAmount": {
+                "sId": 10936,
+                "fId": "15496"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumACode": {
+                "sId": 10936,
+                "fId": "16787"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumAAmount": {
+                "sId": 10936,
+                "fId": "15499"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumBAmount": {
+                "sId": 10936,
+                "fId": "15501"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumDAmount": {
+                "sId": 10936,
+                "fId": "15508"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeAnnualLongServiceLeaveUnusedLumpSumEAmount": {
+                "sId": 10936,
+                "fId": "15510"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeYearToDateIncomeGrossAmount": {
+                "sId": 10936,
+                "fId": "15454"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeForeignIncomeEmploymentGrossAmount": {
+                "sId": 10936,
+                "fId": "25455"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeForeignIncomeEmploymentJointPetroleumDevelopmentAreaGrossAmount": {
+                "sId": 10936,
+                "fId": "25456"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeLabourHireArrangementGrossAmount": {
+                "sId": 10936,
+                "fId": "15456"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeVoluntaryAgreementGrossAmount": {
+                "sId": 10936,
+                "fId": "15518"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeOtherAmount": {
+                "sId": 10936,
+                "fId": "25457"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeIncomeWorkingHolidayMakerYearToDateGrossAmount": {
+                "sId": 10936,
+                "fId": "27454"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeFringeBenefitsReportableTaxableAmount": {
+                "sId": 10936,
+                "fId": "25458"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayeeFringeBenefitsReportableExemptAmount": {
+                "sId": 10936,
+                "fId": "25459"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingYearToDateWithheldAmount": {
+                "sId": 10936,
+                "fId": "16820"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingForeignEmploymentIncomeTotalAmount": {
+                "sId": 10936,
+                "fId": "25460"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingForeignEmploymentIncomeJointPetroleumDevelopmentAreaTotalAmount": {
+                "sId": 10936,
+                "fId": "25461"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingLabourHireTotalAmount": {
+                "sId": 10936,
+                "fId": "25462"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingVoluntaryAgreementTotalAmount": {
+                "sId": 10936,
+                "fId": "25463"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingOtherSpecifiedTotalAmount": {
+                "sId": 10936,
+                "fId": "25464"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PayAsYouGoWithholdingWorkingHolidayMakerYearToDateTotalAmount": {
+                "sId": 10936,
+                "fId": "27455"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_YearToDateForeignIncomeEmploymentTaxCreditWithheldAmount": {
+                "sId": 10936,
+                "fId": "15523"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_JointPetroleumDevelopmentAreaForeignIncomeEmploymentTaxPaidYearToDateAmount": {
+                "sId": 10936,
+                "fId": "27456"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_PaymentSummaryTotalGrossPaymentAmount": {
+                "sId": 10936,
+                "fId": "26716"
+            },
+            "oTH_WAGE_AND_TAX_ITEM_TaxWithheldTotalAmount": {
+                "sId": 10936,
+                "fId": "26717"
+            }
+        },
+        "Deduction Item": {
+            "27616": {
+                "sId": 10939,
+                "fId": 27616
+            },
+            "27618": {
+                "sId": 10939,
+                "fId": 27618
+            },
+            "sIds": [
+                "10939"
+            ],
+            "oTH_DEDUCTION_ITEM_SectionGroup3.oTH_DEDUCTION_ITEM_IndividualDeductionTypeCode": {
+                "sId": 10939,
+                "fId": "16825"
+            },
+            "oTH_DEDUCTION_ITEM_SectionGroup3.oTH_DEDUCTION_ITEM_IndividualDeductionYearToDateAmount": {
+                "sId": 10939,
+                "fId": "16833"
+            }
+        },
+        "Allowance Item": {
+            "sIds": [
+                "10941"
+            ],
+            "oTH_ALLOWANCE_ITEM_SectionGroup4.oTH_ALLOWANCE_ITEM_AllowanceIncomeTypeCode": {
+                "sId": 10941,
+                "fId": "16835"
+            },
+            "oTH_ALLOWANCE_ITEM_SectionGroup4.oTH_ALLOWANCE_ITEM_AllowanceIncomeTypeOtherDescriptionText": {
+                "sId": 10941,
+                "fId": "15524"
+            },
+            "oTH_ALLOWANCE_ITEM_SectionGroup4.oTH_ALLOWANCE_ITEM_AllowanceIncomeYearToDateAmount": {
+                "sId": 10941,
+                "fId": "16841"
+            },
+            "oTH_ALLOWANCE_ITEM_AllowanceIncomeTotalAmount": {
+                "sId": 10941,
+                "fId": "25465"
+            }
+        },
+        "Super Entitlement": {
+            "sIds": [
+                "10943"
+            ],
+            "oTH_SUPER_ENTITLEMENT_YearToDateSuperannuationGuaranteeEmployerContributionAmount": {
+                "sId": 10943,
+                "fId": "15525"
+            },
+            "oTH_SUPER_ENTITLEMENT_YearToDateSuperannuationGuaranteeOrdinaryTimeEarningsAmount": {
+                "sId": 10943,
+                "fId": "15521"
+            },
+            "oTH_SUPER_ENTITLEMENT_EmployerSuperannuationContributionReportableAmount": {
+                "sId": 10943,
+                "fId": "25466"
+            }
+        },
+        "TFN Declaration": {
+            "11539": {
+                "sId": 60088,
+                "fId": 11539
+            },
+            "11541": {
+                "sId": 60088,
+                "fId": 11541
+            },
+            "18451": {
+                "sId": 11120,
+                "fId": 18451
+            },
+            "18452": {
+                "sId": 11120,
+                "fId": 18452
+            },
+            "18453": {
+                "sId": 11120,
+                "fId": 18453
+            },
+            "18457": {
+                "sId": 11128,
+                "fId": 18457
+            },
+            "18459": {
+                "sId": 11128,
+                "fId": 18459
+            },
+            "18460": {
+                "sId": 11128,
+                "fId": 18460
+            },
+            "18464": {
+                "sId": 11120,
+                "fId": 18464
+            },
+            "18466": {
+                "sId": 11120,
+                "fId": 18466
+            },
+            "18600": {
+                "sId": 11120,
+                "fId": 18600
+            },
+            "18610": {
+                "sId": 11128,
+                "fId": 18610
+            },
+            "18613": {
+                "sId": 11120,
+                "fId": 18613
+            },
+            "18615": {
+                "sId": 11120,
+                "fId": 18615
+            },
+            "18616": {
+                "sId": 11128,
+                "fId": 18616
+            },
+            "18641": {
+                "sId": 11128,
+                "fId": 18641
+            },
+            "18648": {
+                "sId": 11128,
+                "fId": 18648
+            },
+            "19050": {
+                "sId": 11128,
+                "fId": 19050
+            },
+            "19056": {
+                "sId": 11128,
+                "fId": 19056
+            },
+            "19537": {
+                "sId": 60088,
+                "fId": 19537
+            },
+            "23952": {
+                "sId": 11120,
+                "fId": 23952
+            },
+            "25243": {
+                "sId": 11120,
+                "fId": 25243
+            },
+            "25246": {
+                "sId": 11120,
+                "fId": 25246
+            },
+            "25247": {
+                "sId": 11120,
+                "fId": 25247
+            },
+            "25267": {
+                "sId": 11128,
+                "fId": 25267
+            },
+            "25268": {
+                "sId": 11128,
+                "fId": 25268
+            },
+            "25269": {
+                "sId": 11128,
+                "fId": 25269
+            },
+            "25270": {
+                "sId": 11128,
+                "fId": 25270
+            },
+            "25390": {
+                "sId": 11128,
+                "fId": 25390
+            },
+            "25391": {
+                "sId": 11128,
+                "fId": 25391
+            },
+            "25470": {
+                "sId": 11303,
+                "fId": 25470
+            },
+            "25471": {
+                "sId": 11303,
+                "fId": 25471
+            },
+            "25472": {
+                "sId": 11303,
+                "fId": 25472
+            },
+            "25473": {
+                "sId": 11303,
+                "fId": 25473
+            },
+            "25474": {
+                "sId": 11303,
+                "fId": 25474
+            },
+            "25475": {
+                "sId": 11303,
+                "fId": 25475
+            },
+            "25477": {
+                "sId": 11303,
+                "fId": 25477
+            },
+            "25480": {
+                "sId": 11306,
+                "fId": 25480
+            },
+            "25481": {
+                "sId": 11306,
+                "fId": 25481
+            },
+            "25677": {
+                "sId": 11120,
+                "fId": 25677
+            },
+            "25720": {
+                "sId": 11120,
+                "fId": 25720
+            },
+            "25721": {
+                "sId": 11120,
+                "fId": 25721
+            },
+            "25722": {
+                "sId": 11120,
+                "fId": 25722
+            },
+            "25723": {
+                "sId": 11120,
+                "fId": 25723
+            },
+            "25724": {
+                "sId": 11120,
+                "fId": 25724
+            },
+            "25725": {
+                "sId": 11120,
+                "fId": 25725
+            },
+            "25726": {
+                "sId": 11120,
+                "fId": 25726
+            },
+            "25727": {
+                "sId": 11120,
+                "fId": 25727
+            },
+            "25728": {
+                "sId": 11120,
+                "fId": 25728
+            },
+            "25747": {
+                "sId": 11128,
+                "fId": 25747
+            },
+            "25748": {
+                "sId": 11128,
+                "fId": 25748
+            },
+            "25749": {
+                "sId": 11128,
+                "fId": 25749
+            },
+            "25750": {
+                "sId": 11128,
+                "fId": 25750
+            },
+            "25751": {
+                "sId": 11128,
+                "fId": 25751
+            },
+            "25753": {
+                "sId": 11128,
+                "fId": 25753
+            },
+            "25754": {
+                "sId": 11128,
+                "fId": 25754
+            },
+            "25755": {
+                "sId": 11128,
+                "fId": 25755
+            },
+            "25756": {
+                "sId": 11128,
+                "fId": 25756
+            },
+            "25757": {
+                "sId": 11128,
+                "fId": 25757
+            },
+            "25760": {
+                "sId": 11128,
+                "fId": 25760
+            },
+            "25761": {
+                "sId": 11128,
+                "fId": 25761
+            },
+            "25762": {
+                "sId": 11128,
+                "fId": 25762
+            },
+            "25770": {
+                "sId": 11128,
+                "fId": 25770
+            },
+            "25771": {
+                "sId": 11128,
+                "fId": 25771
+            },
+            "26140": {
+                "sId": 11120,
+                "fId": 26140
+            },
+            "26142": {
+                "sId": 11128,
+                "fId": 26142
+            },
+            "26183": {
+                "sId": 11120,
+                "fId": 26183
+            },
+            "26188": {
+                "sId": 11128,
+                "fId": 26188
+            },
+            "26189": {
+                "sId": 11128,
+                "fId": 26189
+            },
+            "26191": {
+                "sId": 11128,
+                "fId": 26191
+            },
+            "26220": {
+                "sId": 11128,
+                "fId": 26220
+            },
+            "26222": {
+                "sId": 11128,
+                "fId": 26222
+            },
+            "26647": {
+                "sId": 11120,
+                "fId": 26647
+            },
+            "26740": {
+                "sId": 11128,
+                "fId": 26740
+            },
+            "26741": {
+                "sId": 11128,
+                "fId": 26741
+            },
+            "26744": {
+                "sId": 11128,
+                "fId": 26744
+            },
+            "27073": {
+                "sId": 11128,
+                "fId": 27073
+            },
+            "27074": {
+                "sId": 11128,
+                "fId": 27074
+            },
+            "27666": {
+                "sId": 11128,
+                "fId": 27666
+            },
+            "30275": {
+                "sId": 11120,
+                "fId": 30275
+            },
+            "30276": {
+                "sId": 11120,
+                "fId": 30276
+            },
+            "30517": {
+                "sId": 11128,
+                "fId": 30517
+            },
+            "30531": {
+                "sId": 11128,
+                "fId": 30531
+            },
+            "30537": {
+                "sId": 11128,
+                "fId": 30537
+            },
+            "30558": {
+                "sId": 11128,
+                "fId": 30558
+            },
+            "30565": {
+                "sId": 11128,
+                "fId": 30565
+            },
+            "30567": {
+                "sId": 11128,
+                "fId": 30567
+            },
+            "30585": {
+                "sId": 11120,
+                "fId": 30585
+            },
+            "31537": {
+                "sId": 11128,
+                "fId": 31537
+            },
+            "60955": {
+                "sId": 60088,
+                "fId": 60955
+            },
+            "60956": {
+                "sId": 60088,
+                "fId": 60956
+            },
+            "61131": {
+                "sId": 60088,
+                "fId": 61131
+            },
+            "61132": {
+                "sId": 60088,
+                "fId": 61132
+            },
+            "61893": {
+                "sId": 60088,
+                "fId": 61893
+            },
+            "61894": {
+                "sId": 60088,
+                "fId": 61894
+            },
+            "61895": {
+                "sId": 60088,
+                "fId": 61895
+            },
+            "63457": {
+                "sId": 60088,
+                "fId": 63457
+            },
+            "95230": {
+                "sId": 60088,
+                "fId": 95230
+            },
+            "sIds": [
+                "10956",
+                "10958",
+                "11120",
+                "11121",
+                "11122",
+                "11123",
+                "11124",
+                "11125",
+                "11126",
+                "11127",
+                "11128",
+                "11303",
+                "11306",
+                "11629",
+                "11630",
+                "11940",
+                "11941",
+                "12916",
+                "60088"
+            ],
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipPaymentBasisCode": {
+                "sId": 11303,
+                "fId": "25467"
+            },
+            "oTH_TFN_DECLARATION_PayeeClientResidentStatusCode": {
+                "sId": 11303,
+                "fId": "25468"
+            },
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipTaxFreeThresholdClaimedIndicator": {
+                "sId": 11303,
+                "fId": "25469"
+            },
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipStudyandTrainingLoanRepaymentClaimedIndicator": {
+                "sId": 11303,
+                "fId": "28130"
+            },
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipStudentFinancialSupplementDebtClaimedIndicator": {
+                "sId": 11303,
+                "fId": "25476"
+            },
+            "oTH_TFN_DECLARATION_PayeeDeclarationIndicator": {
+                "sId": 11303,
+                "fId": "25478"
+            },
+            "oTH_TFN_DECLARATION_PayeeDeclarationDate": {
+                "sId": 11303,
+                "fId": "25479"
+            },
+            "oTH_TFN_DECLARATION_PayerPayeeRelationshipTerminatedIndicator": {
+                "sId": 11303,
+                "fId": "28352"
+            }
+        }
+    }
+}

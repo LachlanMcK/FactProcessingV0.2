@@ -1,0 +1,26 @@
+{
+    "1": {
+        "1": {
+            "index": 0,
+            "_value": "1111's"
+        },
+        "2": {
+            "index": 0,
+            "_value": "222's"
+        }
+    },
+    "2": {
+        "1": {
+            "index": 0,
+            "_value": "more 1111's"
+        },
+        "3": {
+            "index": 0,
+            "_value": "333's"
+        }
+    },
+    "PeriodStartDt": "2019-01-01T00:00:00.000Z",
+    "RoleTypeCode": 5,
+    "FormType": "myFT6",
+    "AccountSequenceNumber": 1
+}

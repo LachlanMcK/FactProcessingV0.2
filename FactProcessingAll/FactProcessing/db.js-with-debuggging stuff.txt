@@ -1,0 +1,56 @@
+myLog.debug("in db.js");//LM
+
+fs = require('fs');
+const ca=[fs.readFileSync("rds-combined-ca-bundle.pem")]; 
+
+var mongoClient = require('mongodb');
+var mongoose = require('mongoose');
+myLog.debug('about to connect to ' + process.env.DB);
+myLog.debug('Database provider is: ' + process.env.DBProvider);
+
+if (process.env.DBProvider == 'DocDB') {
+    myLog.debug('caBundle is:' + ca);
+    mongoose.connect(process.env.DB, { useMongoClient: true, ssl: true, sslCA: ca });
+} else {
+    if (process.env.DBProvider == 'Buggy') {
+        myLog.debug('bug hunt');
+        var MongoClient = require('mongodb').MongoClient;
+
+        var client = MongoClient.connect(process.env.DB,
+            { ssl: true, sslCA: ca },
+            function (err, client) {
+                if (err) 
+                    throw err;
+                
+                myLog.debug('this should fail as there is no db')
+                db = client.db('FactsV1');
+
+                myLog.debug(db);
+
+                col = db.collection('forms');
+
+                myLog.debug(col);
+
+                col.insertOne({'ClientInternalId': 88888888,
+                               'FormType': 'myFT6',
+                               'TransactionId':987654321}, function(err,result) {
+                    if (err)
+                        throw err;
+
+                    myLog.debug('Resule is: ' + result);
+                    col.findOne({'TransactionId': 987654321}, function(err, result){
+                    if (err)
+                        throw err;
+
+                        myLog.debug('found it' + result);
+                    })
+                })
+
+                myLog.debug('still here!!');
+            })
+        //mongoose.connect(process.env.DB, { useMongoClient: true, ssl: true, sslCA: ca });
+
+    } else {
+        mongoose.connect(process.env.DB, { useMongoClient: true });
+    }
+}

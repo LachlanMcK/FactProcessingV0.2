@@ -1,0 +1,20 @@
+{"Sections": { $elemMatch: { "SectionId": "10931", "LineItems": { $elemMatch: { "Value": "1234567890", "FieldId": "16556" } } } } }
+
+
+{"Sections": {$elemMatch: {"LineItems.Value": "ABN", "Lineitems.FieldId": }}}
+
+{"Sections.LineItems": {$all:[ {$elemMatch: {"Value": "ABN", "FieldId":"14930" }}, {$elemMatch: {"Value": "1234567890", "FieldId":"16556" }} ]} }
+
+{"Sections": { $elemMatch: { "SectionId": "10931", "LineItems": {$all:[ {$elemMatch: {"Value": "ABN", "FieldId":"14930" }}, {$elemMatch: {"Value": "1234567890", "FieldId":"16556" }} ]} }  }}
+
+{"Sections": { $elemMatch: { "SectionId": "10932", "LineItems": {$all:[ {$elemMatch: {"Value": "Blogs", "FieldId":"16561" }}, {$elemMatch: {"Value": "Mary", "FieldId":"16562" }}, {$elemMatch: {"Value": "1950-04-01", "FieldId":"25445" }}, {$elemMatch: {"Value": "1234", "FieldId":"16573" }} ]} }  }}
+
+
+{"Sections": { $elemMatch: { "SectionId": "1", "LineItems": {$all:[ {$elemMatch: {"Value": "1111's", "FieldId":"1" }}, {$elemMatch: {"Value": "222's", "FieldId":"2" }}]} }  }}
+
+{"FormType":"myFT6","subjectClient.ClientIdentifierType":"ABN","subjectClient.ClientIdentifierValue":1234567890,"subjectClient.MatchingStatus":"Matched","Sections":{"$elemMatch":{"SectionId":"1","LineItems":{"$all":[{"$elemMatch":{"FieldId":"1","Value":"1111's"}},{"$elemMatch":{"FieldId":"2", "Value":"222's"}}]}}}}
+
+{"FormType":"myFT6","subjectClient.ClientIdentifierType":"ABN","subjectClient.ClientIdentifierValue":1234567890,"Sections":{"$elemMatch":{"SectionId":"1","LineItems":{"$all":[{"$elemMatch":{"FieldId":"1","Value":"1111's"}},{"$elemMatch":{"FieldId":"2", "Value":"222's"}}]}}}}
+
+{"FormType":"myFT6","subjectClient.ClientIdentifierType":"ABN","subjectClient.ClientIdentifierValue":1234567890, "Sections":{"$elemMatch":{"SectionId":"1","LineItems":{"$all":[{"$elemMatch":{"Value":"1111's","FieldId":"1"}},{"$elemMatch":{"Value":"222's","FieldId":"2"}}]}}}}
+

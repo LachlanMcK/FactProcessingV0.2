@@ -1,0 +1,29 @@
+
+> forms-processing@0.0.1 test C:\Users\vacan\OneDrive\Work\factProcessing-Mocha\FactProcessingAll
+> mocha --exit ./test/*.test.js "--g" "STP (3|5)"
+
+  FactProc:myLog Loading myLog with env variable DEBUG=FactProc:E-*,FactProc:W-*,FactProc:I-*,FactProc:D-*,-FactProc:W-moment,-FactProc:D-dependenciesMap, Loglevel= 3
+
+
+  STP tests
+    √ STP 3 - Cleanup (Read & Remove) form /api/v1/Clients/ABN/1234567890/Accounts/1/Roles/IT/Payrolls/10131Form result not checked as just cleanup (3998ms)
+    1) STP 5 - Upsert a new FORM /api/v1/Clients/ABN/1234567890/Accounts/1/Roles/IT/Payrolls/10131Form/111222333 should return 201
+
+
+  1 passing (5s)
+  1 failing
+
+  1) STP tests
+       STP 5 - Upsert a new FORM /api/v1/Clients/ABN/1234567890/Accounts/1/Roles/IT/Payrolls/10131Form/111222333 should return 201:
+
+      AssertionError: expected forms to match, but they didn't due to "received has extra property: TransmissionDetails" expected { Object (10931, 10932, ...) }, actual '{"10931":{"14930":{"_value":"ABN"},"15431":{"_value":"BMSIDNOTPROVIDED"},"16556":{"_value":"1234567890"},"16557":{"_value":"Big Boss Inc"},"18449":{"_value":1},"20472":{"_value":1}},"10932":{"16558":{'!!!
+      + expected - actual
+
+      -{"10931":{"14930":{"_value":"ABN"},"15431":{"_value":"BMSIDNOTPROVIDED"},"16556":{"_value":"1234567890"},"16557":{"_value":"Big Boss Inc"},"18449":{"_value":1},"20472":{"_value":1}},"10932":{"16558":{
+      +{"10931":{"14930":{"_value":"ABN","modified":false,"field":{"id":14930,"type":"C","maxLength":3,"codeType":"GRP-STP-EXTERNAL-IDENTIFIER","sectionId":10931,"fdfType":"ALPHA"},"type":"ALPHA","index":0,"
+      
+      at Context.<anonymous> (test\app.test.js:747:20)
+      at processTicksAndRejections (internal/process/task_queues.js:94:5)
+
+
+
