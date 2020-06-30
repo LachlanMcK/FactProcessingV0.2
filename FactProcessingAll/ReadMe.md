@@ -20,33 +20,32 @@ As you will see, the structure needs a bit of a tidy-up and rename (I call thing
 
 * ./lambda.js (hooks up to aws lambda)
 
-* ./FactProcessing/* - the main directory for the solution
 * ./FactProcessing/* - the main directory for the solution to deliver Fact Processing, of note are:
-** ./FactProcessing/server.js - is the initial entry
-** ./FactProcessing/app.js - sets up app level express routes.  There is only one app level route: '/api/v1/Clients' which talks to the FormController
-** ./FactProcessing/db.js - connects to the database
-** ./FactProcessing/(addMissingBrowserStuff.js | dependenciesMap.js | loadRulesEngineWithPatches.js) - mostly point in time work around
+  * ./FactProcessing/server.js - is the initial entry
+  * ./FactProcessing/app.js - sets up app level express routes.  There is only one app level route: '/api/v1/Clients' which talks to the FormController
+  * ./FactProcessing/db.js - connects to the database
+  * ./FactProcessing/(addMissingBrowserStuff.js | dependenciesMap.js | loadRulesEngineWithPatches.js) - mostly point in time work around
 
-** ./FactProcessing/Payroll/* - contains componets of the solution specific to handling the Payroll Product.  This shouldn't live under "FactProcessing" - oh well.
+ * ./FactProcessing/Payroll/* - contains componets of the solution specific to handling the Payroll Product.  This shouldn't live under "FactProcessing" - oh well.
 
-** ./FactProcessing/jsre/* - all the jsre code
-*** ./FactProcessing/jsre/form/* - the generated form defintion
-*** ./FactProcessing/jsre/externalFunctions/* - self explanatory
+ * ./FactProcessing/jsre/* - all the jsre code
+   * ./FactProcessing/jsre/form/* - the generated form defintion
+   * ./FactProcessing/jsre/externalFunctions/* - self explanatory
 
-** ./FactProcessing/Security/* - not yet implemented but imagined to be express middleware to hook into ISF/AM and other security related things.
-** ./FactProcessing/messaging - some code to do HTTP & AMQP messaging in an ATO ideomatic way
-** ./FactProcessing/handRolled - playing around with some manual test
-** ./FactProcessing/mocks - playing around at mocking out security stuff
+ * ./FactProcessing/Security/* - not yet implemented but imagined to be express middleware to hook into ISF/AM and other security related things.
+ * ./FactProcessing/messaging - some code to do HTTP & AMQP messaging in an ATO ideomatic way
+ * ./FactProcessing/handRolled - playing around with some manual test
+ * ./FactProcessing/mocks - playing around at mocking out security stuff
 
 * ./FactProcessing/form/* - the guts of the Fact Processing solution
-** ./FactProcessing/form/FormController.ts - handles the form specific routes, e.g applevel +  /:ClientIdentifierType/:ClientIdentifierValue/Forms/:FormTypeMung...etc
-** ./FactProcessing/form/Form.ts - the mongoose defintion for forms
-** ./FactProcessing/form/*.ts - a few other greebly helper stuff
-** ./FactProcessing/form/factSpecific/*.ts - fact specific config - one *.ts per fact
+  * ./FactProcessing/form/FormController.ts - handles the form specific routes, e.g applevel +  /:ClientIdentifierType/:ClientIdentifierValue/Forms/:FormTypeMung...etc
+  * ./FactProcessing/form/Form.ts - the mongoose defintion for forms
+  * ./FactProcessing/form/*.ts - a few other greebly helper stuff
+  * ./FactProcessing/form/factSpecific/*.ts - fact specific config - one *.ts per fact
 
 * ./test/*- rudimentary automated tests (mostly integration tests - )
-** ./test/app.test.js - this is the guts of the tests - all automated tests are in here 
-** ./test *.sh & *.json - initial test done using curl - probably should be removed.
+  * ./test/app.test.js - this is the guts of the tests - all automated tests are in here 
+  * ./test *.sh & *.json - initial test done using curl - probably should be removed.
 
 * ./services - stuff referenced by JSRE part of the solution
 * ./Scripts - stuff referenced by JSRE part of the solution
