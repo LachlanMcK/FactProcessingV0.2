@@ -895,7 +895,7 @@ describe("STP tests", function () {
     myLog.info('STP 11 ------------------  end  ------------------------');
   }); //end test
 
-  it("STP 12 - Serialised insert & remove form " + shortPayrollURI + " to check awaits are in correct place", async function () {
+  it("STP 12 - Serialised insert & remove form " + shortPayrollURI + " to check awaits are in correct place, check bulktransmission fact created", async function () {
     myLog.info('STP 12 ------------------ start ------------------------ Serialised insert & remove form ')
     this.timeout(999999); debugger;
     r1 = await request(app).delete(bulkTransmissionURI + "/248163264128"); //delete preexisting bulk transmission record
@@ -924,10 +924,10 @@ describe("STP tests", function () {
     r1 = await request(app).get(bulkTransmissionURI + "/248163264128");
     expect(r1.statusCode).to.equal(200, `Failed to get ${bulkTransmissionURI + "/248163264128"}`);
     expect(r1.body[0]["TransmissionDetails"].RecordCount).to.eq(3, `I expected a RecordCount of 3`)
-    let isoDate = postData.updatedAt.toISOString().substr(0, 10);
+    const pad = n => n < 10 ? '0'+n : n;
+    let isoLocalDate = postData.updatedAt.getFullYear() + "-" + pad(postData.updatedAt.getMonth()+1) + "-" + pad(postData.updatedAt.getDate());
 
-    let uri = cancelBulkTransmissionURI + isoDate + '/' + r1.body[0].TM_Update;
-    // let uri = cancelBulkTransmissionURI + '2020-06-27/4:20:35 PM' 
+    let uri = cancelBulkTransmissionURI + isoLocalDate + '/' + r1.body[0].TM_Update;
     r1 = await request(app).delete(uri);
     expect(r1.statusCode).to.equal(200, `Couldn't cancel bulk transmission due to error ${r1.text}`);
 
