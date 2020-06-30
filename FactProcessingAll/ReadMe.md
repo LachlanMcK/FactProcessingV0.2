@@ -47,7 +47,7 @@ As you will see, the structure needs a bit of a tidy-up and rename (I call thing
   * ./test/app.test.js - this is the guts of the tests - all automated tests are in here 
   * ./test *.sh & *.json - initial test done using curl - probably should be removed.
 
-* ./services - stuff referenced by JSRE part of the solution
+* ./services - stuff referenced by JSRE part of the solution, not really part of solution, but necessary
 * ./Scripts - stuff referenced by JSRE part of the solution
 
 
