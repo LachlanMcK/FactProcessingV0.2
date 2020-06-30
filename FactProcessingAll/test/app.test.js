@@ -16,7 +16,9 @@ myLog.info('    DEBUG: ' + process.env.DEBUG);
 myLog.info('    LOGLEVEL: ' + process.env.LOGLEVEL);
 
 var app = require('../FactProcessing/app');
-var th = require('./testingHelpers')
+var th = require('./testingHelpers');
+const { all } = require('../FactProcessing/app');
+const { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } = require('constants');
 
 let beforeEachTime;
 
@@ -42,15 +44,22 @@ Assertion.addMethod('sameForm', function (expected, ignoreList) {
   // new Assertion(this._obj).to.be.instanceof(Model);
   const result = sameForm(obj, expected, ignoreList);
   myLog.debug("Same Form Result" + JSON.stringify(result));
+  let myActual = JSON.stringify(obj);
+  if (myActual.length > 200) myActual = myActual.substr(0, 150) + "..."; else myActual = obj;
+
+  let myExpected = JSON.stringify(expected);
+  if (myExpected.length > 200) myExpected = myExpected.substr(0, 150) + "..."; else myExpected = expected;
+
   // second, our type check
   this.assert(
     (result == true)
-    , "expected forms to match, but they didn't due to " + JSON.stringify(result) + " expected #{this}, actual #{act}"
+    , "expected forms to match, but they didn't due to " + JSON.stringify(result) + " expected #{this}, actual #{act}!!!"
     , "expected forms to be different (ignoreList aside), but theybut they are not expected #{this}, actual #{act}, ignoreList: " + JSON.stringify(ignoreList)
-    , expected        // expected
-    , obj  // actual
+    , myExpected        // expected
+    , myActual  // actual
     , true
   );
+  myLog.debug("Same Form Result" + JSON.stringify(result));
 });
 
 // *****************************************************************************
@@ -66,6 +75,8 @@ describe("GET tests", function () { //return;//
 
   // there is no practial reason to list all.  Just doing 'because I can'
   it("Get 1 - List all " + testURI + " Should return 200 OK", async function () {
+    this.timeout(999999); debugger;
+
     myLog.debug("Get 1 - List all ");
     debugger;
     return request(app).get(testURI)
@@ -79,8 +90,8 @@ describe("GET tests", function () { //return;//
 
         let x10131Forms = response.body.filter(f => f.FormType == '10131' && f.Sections.length == 0);
         expect(x10131Forms.length).to.be.gte(4);
-        let x10131MatchedForms = x10131Forms.filter(f => f.subjectClient.ClientIdentifierType == 'ABN' && f.subjectClient.ClientIdentifierValue == 1234567890 && !f.ClientInternalId)
-        expect(x10131MatchedForms.length).to.be.eq(1);
+        let x10131UnMatchedForms = x10131Forms.filter(f => (f.subjectClient.MatchingStatus== "Matched" && !f.ClientInternalId) || (f.subjectClient.MatchingStatus== "UnMatched" && f.ClientInternalId) )
+        expect(x10131UnMatchedForms.length).to.be.eq(0);
 
       })
   });
@@ -218,6 +229,7 @@ describe("PUT tests ", function () { //return;//
     postData.TransactionId = 5432101;
     postData.RoleTypeCode = 5;
     postData.FormType = "myFT6";
+    postData.TransmissionDetails = {};
 
     expect(response.body).to.be.sameForm(postData, ignoreList);
   });
@@ -251,7 +263,7 @@ describe("PUT tests ", function () { //return;//
 
     myLog.debug("Put 5: got back:" + JSON.stringify(response.body));
 
-    expect(response.statusCode).to.equal(201);
+    expect(response.statusCode).to.equal(200);
 
     const lessThanOneMinuteAgo = (new Date() - new Date(response.body.updatedAt)) < 60000;
     expect(lessThanOneMinuteAgo).to.equal(true);
@@ -259,6 +271,7 @@ describe("PUT tests ", function () { //return;//
     postData.TransactionId = 54321013;
     postData.RoleTypeCode = 5;
     postData.FormType = "myFT6";
+    postData.TransmissionDetails = {};
 
     expect(response.body).sameForm(postData, ignoreList);
 
@@ -271,6 +284,7 @@ describe("PUT tests ", function () { //return;//
     response = await request(app).put(longURI3)
       .set('Accept', 'application/json')
       .send(postData);
+    expect(response.statusCode).to.equal(200);
 
     // await new Promise(resolve => setTimeout(resolve, 500));
 
@@ -391,6 +405,7 @@ describe("PUT tests ", function () { //return;//
     postData.TransactionId = 5432102;
     postData.RoleTypeCode = 5;
     postData.FormType = "myFT6";
+    postData.TransmissionDetails = {};
 
     expect(response.body.subjectClient.MatchingStatus).to.equal("Matched");
 
@@ -504,6 +519,7 @@ describe("STP tests", function () {
     // console.group = realConsoleGroup;
   });
 
+  const testURI = "/api/v1/Clients/All/Forms";
   const testPayrollURI = "/api/v1/Clients/All/Payrolls";
 
   const shortPayrollURI = "/api/v1/Clients/ABN/1234567890/Accounts/1/Roles/IT/Payrolls/10131Form";
@@ -513,6 +529,9 @@ describe("STP tests", function () {
   const longURI = "/api/v1/Clients/ABN/1234567890/Accounts/1/Roles/IT/Forms/10131Form/111222333";
   const idMatchURI = "/api/v1/Clients/ABN/1234567890/FormIdentity/10131Form";
   const shortPrefillURI = "/api/v1/Clients/TFN/1234567890/Forms/prefillIITRForm";
+  const bulkTransmissionURI = "/api/v1/Clients/ABN/1358132144/Forms/bulkTransmissionForm";
+  const cancelBulkTransmissionURI = "/api/v1/Clients/ABN/1358132144/248163264128/";
+  const cancelBulkTransmissionURI2 = "/api/v1/Clients/ABN/1358132144/248163264128";
 
   const ignoreList = ["_id", "__v", "createdAt", "updatedAt", "DT_Update", "TM_Update", "Sections", "field", "modified"];
 
@@ -687,8 +706,7 @@ describe("STP tests", function () {
 
   it("STP 5 - Upsert a new FORM " + longPayrollURI + " should return 201", async function () {
     myLog.info('STP 5 ------------------ start ------------------------ Upsert a new FORM ');
-    this.timeout(999999);
-    debugger;
+    this.timeout(999999); debugger;
 
     const vm = jsreDummyform();
 
@@ -726,8 +744,9 @@ describe("STP tests", function () {
     const expected = fudgeExpected(postData);
     delete expected.ClientInternalId
     expected.TransactionId = 1112223335;
+    expected.TransmissionDetails = {};
     const actual = fudgeResponse(response.body);
-
+    
     expect(actual).sameForm(expected, ignoreList);
     myLog.info("Seems all good!!");
     // await new Promise(resolve => setTimeout(resolve, 1000)); //wait a second for any log messages to get written
@@ -878,22 +897,39 @@ describe("STP tests", function () {
 
   it("STP 12 - Serialised insert & remove form " + shortPayrollURI + " to check awaits are in correct place", async function () {
     myLog.info('STP 12 ------------------ start ------------------------ Serialised insert & remove form ')
+    this.timeout(999999); debugger;
+    r1 = await request(app).delete(bulkTransmissionURI + "/248163264128"); //delete preexisting bulk transmission record
+    expect([200, 404]).to.include(r1.statusCode, `Couldn't do clean up ${bulkTransmissionURI + "/248163264128"} as status code is not 200/404`);
+
+    for (let suffix = 12; suffix < 15; suffix++) {
+      r1 = await request(app).delete(deletePayrollURI + "/" + 111222333 + suffix);
+      expect([200, 404]).to.include(r1.statusCode, `Couldn't do clean up ${deletePayrollURI + "/" + 111222333 + suffix} as status code is not 200/404`);
+    };
+
     const vm = jsreDummyform();
     let postData = {};
     stp.mapVMToLI(vm, postData);
     postData.updatedAt = new Date();
     postData.DT_Update = new Date().toLocaleDateString();
     postData.TM_Update = new Date().toLocaleTimeString();
-    debugger;
+    postData.TransmissionDetails = { TransmissionBET: 248163264128, ClientIdentifierType: "ABN", ClientIdentifierValue: 1358132144 }
+
     let response;
     for (let suffix = 12; suffix < 15; suffix++) {
+      postData.TransmissionDetails.TransmissionReference = suffix;
       response = await request(app).put(longPayrollURI + suffix).set('Accept', 'application/json').send(postData);
       myLog.info('Created payroll with  ' + suffix + " " + response.statusCode);
     };
-    for (let suffix = 12; suffix < 15; suffix++) {
-      response = await request(app).delete(deletePayrollURI + "/" + 111222333 + suffix);
-      expect(response.statusCode).to.equal(200);
-    };
+
+    r1 = await request(app).get(bulkTransmissionURI + "/248163264128");
+    expect(r1.statusCode).to.equal(200, `Failed to get ${bulkTransmissionURI + "/248163264128"}`);
+    expect(r1.body[0]["TransmissionDetails"].RecordCount).to.eq(3, `I expected a RecordCount of 3`)
+    let isoDate = postData.updatedAt.toISOString().substr(0, 10);
+
+    let uri = cancelBulkTransmissionURI + isoDate + '/' + r1.body[0].TM_Update;
+    // let uri = cancelBulkTransmissionURI + '2020-06-27/4:20:35 PM' 
+    r1 = await request(app).delete(uri);
+    expect(r1.statusCode).to.equal(200, `Couldn't cancel bulk transmission due to error ${r1.text}`);
 
     myLog.info('STP 12 ------------------  end  ------------------------');
   }); //end test
@@ -913,9 +949,10 @@ describe("STP tests", function () {
 
   it("STP 14 - Optimistic locking check ", async function () {
     myLog.info('STP 14 ------------------ start ------------------------ wait')
+    this.timeout(999999); debugger;
 
     let r1;
-    r1 = await request(app).delete(longPayrollURI + "15");
+    r1 = await request(app).delete(longPayrollURI + "15");  //cleanup 
     expect(r1.statusCode).to.be.oneOf([200, 404]);
     if (r1.statusCode == 200)
       expect(r1.text).to.equal("Form deleted - with keys {\"FormType\":\"10131\",\"TransactionId\":11122233315,\"subjectClient.ClientIdentifierType\":\"ABN\",\"subjectClient.ClientIdentifierValue\":1234567890}");
@@ -934,32 +971,35 @@ describe("STP tests", function () {
     //need to delay 1 sec so the new record has a later date/time to just populated 
     await new Promise(resolve => setTimeout(resolve, 1000));
     myLog.debug(`Optimistic locking check: Create with DT_Update: ${postData.DT_Update}, TM_Update: ${postData.TM_Update} `);
-    r1 = await request(app).put(longPayrollURI + "15").set('Accept', 'application/json').send(postData);
+    r1 = await request(app).put(longPayrollURI + "15").set('Accept', 'application/json').send(postData);  //first update (create)
     expect(r1.statusCode).to.equal(201);
+
     let rememberedDate = r1.body.DT_Update, rememberedTime = r1.body.TM_Update;
     myLog.debug(`Optimistic locking check: Went in with body: DT_Update: ${postData.DT_Update}, TM_Update: ${postData.TM_Update} `);
     myLog.debug(`Optimistic locking check: After udate have: DT_UpdateReturned with Date: ${r1.body.DT_Update}, TM_Update: ${r1.body.TM_Update} `);
-    postData.updatedAt = new Date();
+    // postData.createdAt = r1.body.createdAt;
+    postData.updatedAt = r1.body.updatedAt;
     postData.DT_Update = r1.body.DT_Update;
     postData.TM_Update = r1.body.TM_Update;
     await new Promise(resolve => setTimeout(resolve, 1000));
-    r1 = await request(app).put(longPayrollURI + "15").set('Accept', 'application/json').send(postData);
-    expect(r1.statusCode).to.equal(201) //********ths is wrong!!!!!!!!!! */
+    r1 = await request(app).put(longPayrollURI + "15").set('Accept', 'application/json').send(postData);  //second update
+    expect(r1.statusCode).to.equal(200)
+
     //now when we execute another update, the date/time in the body from the first PUT (the create) not the subsequent update.
-    r1 = await request(app).put(longPayrollURI + "15").set('Accept', 'application/json').send(postData);
+    r1 = await request(app).put(longPayrollURI + "15").set('Accept', 'application/json').send(postData);  //third & failing update
     myLog.debug(`Optimistic locking check: Returned with (should be undefiend) - DT_Update: ${r1.body.DT_Update}, TM_Update: ${r1.body.TM_Update} `);
     expect(r1.statusCode).to.equal(409, ` Read should have used DT_Update: ${postData.DT_Update}, TM_Update: ${postData.TM_Update} but doesn't match DT_Update: ${r1.body.DT_Update}, TM_Update: ${r1.body.TM_Update} so should have vailed leading to a failed attempt to add a conflicting record. `);
     expect(r1.text).to.equal("There was a problem updating the form due to Duplicate Key (my guess it is an optomistic locking problem).");
 
     myLog.info('STP 14 ------------------  end  ------------------------');
   });
-  it("STP 15 - History check ", async function () {
+  it("STP 15 - History & prefill check ", async function () {
     myLog.info('STP 14 ------------------ start ------------------------ wait')
     this.timeout(999999);
     debugger;
 
     let r1;
-    r1 = await request(app).get(shortPrefillURI);
+    r1 = await request(app).get(shortPrefillURI); //Can't see any point to this, but can't be bothered removing it.
     expect([200, 404]).to.include(r1.statusCode);
     if (r1.statusCode == 200) {
       let oldTranId = r1.body[0].TransactionId;
@@ -967,7 +1007,10 @@ describe("STP tests", function () {
       expect(r1.statusCode).to.equal(200);
     }
 
-    r1 = await request(app).delete(longPayrollURI2 + "16");
+    r1 = await request(app).delete(bulkTransmissionURI + "/987654321"); //delete preexisting bulk transmission record
+    expect([200, 404]).to.include(r1.statusCode);
+
+    r1 = await request(app).delete(longPayrollURI2 + "16"); //Delete preexisting record if there
     expect(r1.statusCode).to.be.oneOf([200, 404]);
     if (r1.statusCode == 200)
       expect(r1.text).to.equal("Form deleted - with keys {\"FormType\":\"10131\",\"TransactionId\":11122233316,\"subjectClient.ClientIdentifierType\":\"TFN\",\"subjectClient.ClientIdentifierValue\":1234567890}");
@@ -980,41 +1023,45 @@ describe("STP tests", function () {
     let postData = {};
     stp.mapVMToLI(vm, postData);
     //we will use these date/time to try to find an existing record; but we deleted it, so won't be found
+    postData.TransmissionDetails = { TransmissionBET: 987654321, ClientIdentifierType: "ABN", ClientIdentifierValue: 1358132144 }
     postData.updatedAt = new Date();
     postData.DT_Update = new Date().toLocaleDateString();
     postData.TM_Update = new Date().toLocaleTimeString();
-    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData);
+    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData);  //First Update - no histoy
     expect(r1.statusCode).to.equal(201);
 
-    postData.createdAt = r1.body.createdAt;
+    // postData.createdAt = r1.body.createdAt;
     postData.updatedAt = r1.body.updatedAt;
     postData.DT_Update = r1.body.DT_Update;
     postData.TM_Update = r1.body.TM_Update;
-    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData);
-    expect(r1.statusCode).to.equal(200) 
+    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData); //Second Update 
+    expect(r1.statusCode).to.equal(200)
 
     postData.updatedAt = r1.body.updatedAt;
     postData.DT_Update = r1.body.DT_Update;
     postData.TM_Update = r1.body.TM_Update;
     postData[10932][16558] = 222;
-    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData);
+    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData); //Third Update 
     expect(r1.statusCode).to.equal(200);
 
     postData.updatedAt = r1.body.updatedAt;
     postData.DT_Update = r1.body.DT_Update;
     postData.TM_Update = r1.body.TM_Update;
     postData[10932][16558] = 111;
-    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData);
+    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData); //Fourth Update 
     expect(r1.statusCode).to.equal(200);
 
     postData.updatedAt = r1.body.updatedAt;
     postData.DT_Update = r1.body.DT_Update;
     postData.TM_Update = r1.body.TM_Update;
     postData[10933][16582]._value = '2019-01-23'
-    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData);
+
+    r1 = await request(app).put(longPayrollURI2 + "16").set('Accept', 'application/json').send(postData); //Fifth Update 
     expect(r1.statusCode).to.equal(200);
 
-    let response = await request(app).get(shortPrefillURI);
+    await new Promise(resolve => setTimeout(resolve, 100)); //give 1/10 sec wait
+
+    let response = await request(app).get(shortPrefillURI); //check the prefill contents
     expect(response.statusCode).to.equal(200);
     expect(response.body.length).to.equal(1);
     expect(response.body[0].facts.length).to.equal(2);
@@ -1022,6 +1069,10 @@ describe("STP tests", function () {
     expect(response.body[0].facts[0]["Payroll Event"]["oTH_PAYROLL_EVNT_PayrollEventPeriodEndDate"]).to.eq("2019-01-23T00:00:00.000Z");
     expect(response.body[0].facts[1]["Payee Details"]["oTH_PAYEE_DTLS_CurrentPayerPayeeRelationshipPayeePayrollIdentifier"]).to.equal('222');
     expect(response.body[0].facts[1]["Payroll Event"]["oTH_PAYROLL_EVNT_PayrollEventPeriodEndDate"]).to.eq("2019-01-22T00:00:00.000Z");
+
+    r1 = await request(app).get(bulkTransmissionURI + "/987654321");
+    expect(r1.statusCode).to.equal(200);
+    expect(r1.body[0]["TransmissionDetails"].RecordCount).to.eq(1)
 
     myLog.info('STP 15 ------------------  end  ------------------------');
   });
